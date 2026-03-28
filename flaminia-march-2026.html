@@ -330,18 +330,17 @@
 
     /* ── POST THUMB ── */
     .post-thumb {
-      height: 130px;
+      aspect-ratio: 4/5;
       overflow: hidden;
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     .post-thumb img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
       display: block;
+      border-radius: 10px 10px 0 0;
     }
     .post-thumb-fallback {
       width: 100%;
@@ -412,7 +411,15 @@
       .camp-stats { gap: 8px; }
       .cs .v { font-size: 16px; }
     }
-  </style>
+  
+    /* -- Post card hover & overlay -- */
+    .post-card { transition: transform 0.22s ease, box-shadow 0.22s ease; }
+    .post-card:hover { transform: translateY(-5px); box-shadow: 0 14px 40px rgba(83,108,182,0.22); }
+    .post-thumb::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0) 55%); opacity: 0; transition: opacity 0.25s ease; pointer-events: none; border-radius: 10px 10px 0 0; }
+    .post-card:hover .post-thumb::after { opacity: 1; }
+    .post-thumb img { transition: transform 0.35s ease; }
+    .post-card:hover .post-thumb img { transform: scale(1.04); }
+</style>
 </head>
 <body>
 
@@ -970,7 +977,7 @@
 
       const viewLinkHTML = p.postUrl
         ? `<a class="post-view-link" href="${p.postUrl}" target="_blank" rel="noopener">View on Instagram ↗</a>`
-        : `<span class="post-view-link post-view-pending">link pending</span>`;
+        : '';
 
       const card = document.createElement('div');
       card.className = `post-card${rank === 1 ? ' rank-1' : ''}`;
@@ -993,7 +1000,7 @@
             <div class="eng-bar-label">Engagement: ${p.engagement}%</div>
             <div class="eng-bar-track"><div class="eng-bar-fill" style="width:${engPct}%;"></div></div>
           </div>
-          <div class="post-view-row">${viewLinkHTML}</div>
+          ${viewLinkHTML ? '<div class="post-view-row">${viewLinkHTML}</div>' : ''}
         </div>
       `;
       grid.appendChild(card);
