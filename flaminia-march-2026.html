@@ -940,7 +940,8 @@
     return String(n);
   }
 
-  function renderPosts(metric) {
+  function thumbFallback(img,g){img.parentNode.innerHTML='<div class="post-thumb-fallback" style="background:'+g+'"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="rgba(255,255,255,0.55)"/></svg></div>';}
+    function renderPosts(metric) {
     const sorted = [...postsData].sort((a, b) => b[metric] - a[metric]);
     const grid = document.getElementById('postsGrid');
     grid.innerHTML = '';
@@ -964,7 +965,7 @@
       ).join('');
 
       const thumbHTML = p.imageUrl
-        ? `<img src="${p.imageUrl}" alt="Post thumbnail" onerror="this.parentNode.innerHTML='<div class=\\"post-thumb-fallback\\" style=\\"background:${p.gradient};\\"><svg width=\\"28\\" height=\\"28\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"rgba(255,255,255,0.55)\\" stroke-width=\\"1.5\\"><rect x=\\"3\\" y=\\"3\\" width=\\"18\\" height=\\"18\\" rx=\\"2\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"4\\"/><circle cx=\\"17.5\\" cy=\\"6.5\\" r=\\".5\\" fill=\\"rgba(255,255,255,0.55)\\"/></svg></div>'">`
+        ? `<img src="${p.imageUrl}" alt="Post thumbnail" onerror="thumbFallback(this,'${p.gradient}')">`
         : `<div class="post-thumb-fallback" style="background:${p.gradient};"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="rgba(255,255,255,0.55)"/></svg></div>`;
 
       const viewLinkHTML = p.postUrl
