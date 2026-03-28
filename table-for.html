@@ -6,258 +6,54 @@
   <title>Table For Group · Marketing Reports · March 2026</title>
   <style>
     :root {
-      --bg: #F2EFE8;
-      --white: #FFFFFF;
-      --dark: #1C1E2B;
-      --mid: #6B7280;
-      --light: #9CA3AF;
-      --blue: #536CB6;
-      --deep: #3A5299;
-      --border: rgba(83,108,182,0.12);
+      --bg: #F2EFE8; --white: #FFFFFF; --dark: #1C1E2B;
+      --mid: #6B7280; --light: #9CA3AF; --blue: #536CB6;
+      --deep: #3A5299; --border: rgba(83,108,182,0.12);
     }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Georgia', serif;
-      background: var(--bg);
-      color: var(--dark);
-      min-height: 100vh;
-    }
-
-    /* ── HEADER ── */
+    body { font-family: 'Georgia', serif; background: var(--bg); color: var(--dark); min-height: 100vh; }
     .hub-header {
       background: linear-gradient(135deg, #161B2E 0%, #2A3A6B 55%, #3A5299 100%);
-      padding: 48px 64px 44px;
-      position: relative;
-      overflow: hidden;
+      padding: 48px 64px 44px; position: relative; overflow: hidden;
     }
-    .hub-header::after {
-      content: '';
-      position: absolute;
-      right: -80px;
-      top: -80px;
-      width: 320px;
-      height: 320px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.04);
-      pointer-events: none;
-    }
-    .hub-header::before {
-      content: '';
-      position: absolute;
-      right: 100px;
-      bottom: -60px;
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.03);
-      pointer-events: none;
-    }
-    .hub-brand {
-      font-family: system-ui, -apple-system, sans-serif;
-      font-size: 10px;
-      letter-spacing: 3.5px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.45);
-      margin-bottom: 14px;
-    }
-    .hub-title {
-      font-size: 34px;
-      font-weight: normal;
-      color: #fff;
-      letter-spacing: -0.3px;
-      line-height: 1.15;
-    }
+    .hub-header::after { content: ''; position: absolute; right: -80px; top: -80px; width: 320px; height: 320px; border-radius: 50%; background: rgba(255,255,255,0.04); pointer-events: none; }
+    .hub-header::before { content: ''; position: absolute; right: 100px; bottom: -60px; width: 180px; height: 180px; border-radius: 50%; background: rgba(255,255,255,0.03); pointer-events: none; }
+    .hub-brand { font-family: system-ui, sans-serif; font-size: 10px; letter-spacing: 3.5px; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 14px; }
+    .hub-title { font-size: 34px; font-weight: normal; color: #fff; letter-spacing: -0.3px; line-height: 1.15; }
     .hub-title span { color: #7A94CF; }
-    .hub-meta {
-      margin-top: 10px;
-      font-family: system-ui, sans-serif;
-      font-size: 13px;
-      color: rgba(255,255,255,0.55);
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
+    .hub-meta { margin-top: 10px; font-family: system-ui, sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); display: flex; align-items: center; gap: 16px; }
     .hub-meta .dot { opacity: 0.4; }
-    .hub-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 20px;
-      padding: 3px 10px;
-      font-size: 10.5px;
-      color: rgba(255,255,255,0.7);
-      font-family: system-ui, sans-serif;
-      letter-spacing: 0.3px;
-    }
-    .hub-pill .dot-live {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: #5BE0A0;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
-    }
-
-    /* ── CONTENT ── */
-    .hub-content {
-      max-width: 1220px;
-      margin: 0 auto;
-      padding: 44px 64px 72px;
-    }
-
-    .section-label {
-      font-family: system-ui, sans-serif;
-      font-size: 11px;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--light);
-      margin-bottom: 20px;
-    }
-
-    /* ── GRID ── */
-    .venue-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    /* ── CARD ── */
-    .venue-card {
-      background: var(--white);
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-      transition: transform 0.22s ease, box-shadow 0.22s ease;
-      display: flex;
-      flex-direction: column;
-    }
-    .venue-card.live:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.13);
-      cursor: pointer;
-    }
-    .venue-card.soon {
-      opacity: 0.72;
-    }
-    .card-accent {
-      height: 5px;
-      flex-shrink: 0;
-    }
-    .card-body {
-      padding: 20px 20px 18px;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-    .venue-name {
-      font-size: 15.5px;
-      font-weight: bold;
-      color: var(--dark);
-      margin-bottom: 3px;
-      letter-spacing: -0.2px;
-    }
-    .venue-desc {
-      font-family: system-ui, sans-serif;
-      font-size: 11.5px;
-      color: var(--light);
-      margin-bottom: 18px;
-      line-height: 1.4;
-    }
-    .card-footer {
-      margin-top: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .card-status {
-      font-family: system-ui, sans-serif;
-      font-size: 10.5px;
-      letter-spacing: 0.4px;
-    }
-    .status-live {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      color: #3D8C5E;
-    }
-    .status-live::before {
-      content: '';
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: #3D8C5E;
-      animation: pulse 2s infinite;
-    }
-    .status-soon {
-      color: var(--light);
-    }
-    .card-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      font-family: system-ui, sans-serif;
-      font-size: 11.5px;
-      font-weight: 600;
-      padding: 7px 14px;
-      border-radius: 7px;
-      text-decoration: none;
-      letter-spacing: 0.2px;
-      transition: background 0.15s, color 0.15s;
-      border: none;
-      cursor: pointer;
-    }
-    .btn-live {
-      background: var(--deep);
-      color: white;
-    }
-    .btn-live:hover {
-      background: var(--blue);
-    }
-    .btn-soon {
-      background: rgba(0,0,0,0.05);
-      color: var(--light);
-      cursor: default;
-    }
-
-    /* ── DIVIDER ── */
-    .section-divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 36px 0 28px;
-    }
-
-    /* ── FOOTER ── */
-    .hub-footer {
-      text-align: center;
-      padding: 32px;
-      font-family: system-ui, sans-serif;
-      font-size: 11.5px;
-      color: var(--light);
-      border-top: 1px solid var(--border);
-    }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 1024px) {
-      .venue-grid { grid-template-columns: repeat(3, 1fr); }
-      .hub-content { padding: 36px 40px 60px; }
-      .hub-header { padding: 40px; }
-    }
-    @media (max-width: 680px) {
-      .venue-grid { grid-template-columns: repeat(2, 1fr); }
-      .hub-header { padding: 32px 24px; }
-      .hub-content { padding: 28px 24px 48px; }
-      .hub-title { font-size: 26px; }
-    }
+    .hub-pill { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 3px 10px; font-size: 10.5px; color: rgba(255,255,255,0.7); font-family: system-ui, sans-serif; letter-spacing: 0.3px; }
+    .hub-pill .dot-live { width: 6px; height: 6px; border-radius: 50%; background: #5BE0A0; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .hub-content { max-width: 1220px; margin: 0 auto; padding: 44px 64px 72px; }
+    .section-label { font-family: system-ui, sans-serif; font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--light); margin-bottom: 20px; }
+    .venue-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .venue-card { background: var(--white); border-radius: 14px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.06); transition: transform 0.22s ease, box-shadow 0.22s ease; display: flex; flex-direction: column; }
+    .venue-card.live:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.13); cursor: pointer; }
+    .venue-card.soon { opacity: 0.72; }
+    .card-accent { height: 5px; flex-shrink: 0; }
+    .card-body { padding: 20px 20px 18px; display: flex; flex-direction: column; flex: 1; }
+    .card-logo { height: 44px; display: flex; align-items: center; justify-content: flex-start; margin-bottom: 14px; }
+    .card-logo img { max-height: 40px; max-width: 100%; width: auto; object-fit: contain; object-position: left center; }
+    .venue-name { font-size: 15.5px; font-weight: bold; color: var(--dark); margin-bottom: 3px; letter-spacing: -0.2px; }
+    .venue-desc { font-family: system-ui, sans-serif; font-size: 11.5px; color: var(--light); margin-bottom: 18px; line-height: 1.4; }
+    .card-footer { margin-top: auto; display: flex; align-items: center; justify-content: space-between; }
+    .card-status { font-family: system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.4px; }
+    .status-live { display: flex; align-items: center; gap: 5px; color: #3D8C5E; }
+    .status-live::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #3D8C5E; animation: pulse 2s infinite; }
+    .status-soon { color: var(--light); }
+    .card-btn { display: inline-flex; align-items: center; gap: 5px; font-family: system-ui, sans-serif; font-size: 11.5px; font-weight: 600; padding: 7px 14px; border-radius: 7px; text-decoration: none; letter-spacing: 0.2px; transition: background 0.15s, color 0.15s; border: none; cursor: pointer; }
+    .btn-live { background: var(--deep); color: white; }
+    .btn-live:hover { background: var(--blue); }
+    .btn-soon { background: rgba(0,0,0,0.05); color: var(--light); cursor: default; }
+    .section-divider { border: none; border-top: 1px solid var(--border); margin: 36px 0 28px; }
+    .hub-footer { text-align: center; padding: 32px; font-family: system-ui, sans-serif; font-size: 11.5px; color: var(--light); border-top: 1px solid var(--border); }
+    @media (max-width: 1024px) { .venue-grid { grid-template-columns: repeat(3, 1fr); } .hub-content { padding: 36px 40px 60px; } .hub-header { padding: 40px; } }
+    @media (max-width: 680px) { .venue-grid { grid-template-columns: repeat(2, 1fr); } .hub-header { padding: 32px 24px; } .hub-content { padding: 28px 24px 48px; } .hub-title { font-size: 26px; } }
   </style>
 </head>
 <body>
-
-<!-- HEADER -->
 <div class="hub-header">
   <div class="hub-brand">Maybe Marketing</div>
   <h1 class="hub-title">Table For Group &nbsp;·&nbsp; <span>Marketing Reports</span></h1>
@@ -269,18 +65,16 @@
     <span class="hub-pill"><span class="dot-live"></span>1 of 12 live</span>
   </div>
 </div>
-
-<!-- CONTENT -->
 <div class="hub-content">
-
   <div class="section-label">Venues</div>
-
   <div class="venue-grid">
-
-    <!-- ── FLAMINIA (LIVE) ── -->
+    
     <div class="venue-card live" onclick="location.href='flaminia-march-2026.html'">
       <div class="card-accent" style="background: linear-gradient(90deg, #3A5299, #536CB6);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/flaminia.png" alt="Flaminia" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">Flaminia</div>
         <div class="venue-desc">Italian Fine Dining · Pullman Hotel, Sydney</div>
         <div class="card-footer">
@@ -290,10 +84,12 @@
       </div>
     </div>
 
-    <!-- ── EL VISTA ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #B8602A, #D4813E);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/el-vista.png" alt="El Vista" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">El Vista</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -303,10 +99,12 @@
       </div>
     </div>
 
-    <!-- ── THE CROFT HOUSE ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #2E6B4F, #3D8C5E);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/the-croft-house.png" alt="The Croft House" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">The Croft House</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -316,10 +114,12 @@
       </div>
     </div>
 
-    <!-- ── ALLORA ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #B84060, #D4607A);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/allora.png" alt="Allora" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">Allora</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -329,10 +129,12 @@
       </div>
     </div>
 
-    <!-- ── TUTTO ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #6E2642, #9A3D62);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/tutto.png" alt="Tutto" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">Tutto</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -342,10 +144,12 @@
       </div>
     </div>
 
-    <!-- ── PARK & COVE ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #1E6878, #2A8FA8);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/park-and-cove.png" alt="Park &amp; Cove" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">Park &amp; Cove</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -355,10 +159,12 @@
       </div>
     </div>
 
-    <!-- ── OVELLO ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #B85A20, #D47840);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/ovello.png" alt="Ovello" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">Ovello</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -368,10 +174,12 @@
       </div>
     </div>
 
-    <!-- ── HYDE ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #3A3A4A, #525268);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/hyde.png" alt="Hyde" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">Hyde</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -381,10 +189,12 @@
       </div>
     </div>
 
-    <!-- ── BAHA ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #C44040, #E06060);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/baha.png" alt="Baha" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">Baha</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -394,10 +204,12 @@
       </div>
     </div>
 
-    <!-- ── OTHER SIDE OF THE MOON ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #4A2878, #6A4A9C);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/other-side-of-the-moon.png" alt="Other Side of the Moon" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">Other Side of the Moon</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -407,10 +219,12 @@
       </div>
     </div>
 
-    <!-- ── LA MESA ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #A07828, #C89A40);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/la-mesa.png" alt="La Mesa" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">La Mesa</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -420,10 +234,12 @@
       </div>
     </div>
 
-    <!-- ── ALUCO ── -->
     <div class="venue-card soon">
       <div class="card-accent" style="background: linear-gradient(90deg, #4A6E38, #6A9452);"></div>
       <div class="card-body">
+        <div class="card-logo">
+          <img src="assets/logos/aluco.png" alt="Aluco" onerror="this.style.display='none'">
+        </div>
         <div class="venue-name">Aluco</div>
         <div class="venue-desc">Table For Group</div>
         <div class="card-footer">
@@ -432,20 +248,12 @@
         </div>
       </div>
     </div>
-
-  </div><!-- /venue-grid -->
-
+  </div>
   <hr class="section-divider">
-
   <div style="font-family: system-ui, sans-serif; font-size: 12px; color: var(--light); line-height: 1.6;">
     Reports are published monthly. Each report covers social media performance, email campaigns, design activity, and attributed revenue for the period shown. Data sources: Rella, Klaviyo, Sevenrooms.
   </div>
-
-</div><!-- /hub-content -->
-
-<div class="hub-footer">
-  Prepared by Maybe Marketing · March 2026 · Confidential
 </div>
-
+<div class="hub-footer">Prepared by Maybe Marketing · March 2026 · Confidential</div>
 </body>
 </html>
