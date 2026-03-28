@@ -15,19 +15,25 @@
       --deep: #3a4530;
       --border: rgba(84,96,62,0.13);
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--dark);
       min-height: 100vh;
     }
+
+    /* ── HEADER ── */
     .hub-header {
       background: linear-gradient(135deg, #1e2416 0%, #2d3820 55%, #3d4a28 100%);
       padding: 44px 64px 40px;
       position: relative;
       overflow: hidden;
     }
+    /* No decorative circles */
+
     .hub-header-inner {
       display: flex;
       align-items: center;
@@ -60,7 +66,10 @@
       letter-spacing: -0.4px;
       line-height: 1.15;
     }
-    .hub-title span { color: #bb4721; font-weight: 400; }
+    .hub-title span {
+      color: #bb4721;
+      font-weight: 400;
+    }
     .hub-meta {
       margin-top: 10px;
       font-size: 12px;
@@ -90,12 +99,18 @@
       flex-shrink: 0;
       display: inline-block;
     }
-    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+
+    /* ── CONTENT ── */
     .hub-content {
       max-width: 1200px;
       margin: 0 auto;
       padding: 48px 56px 80px;
     }
+
     .section-label {
       font-size: 9px;
       letter-spacing: 3.5px;
@@ -103,11 +118,15 @@
       color: var(--mid);
       margin-bottom: 22px;
     }
+
+    /* ── GRID ── */
     .venue-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 18px;
     }
+
+    /* ── CARD ── */
     .venue-card {
       background: var(--white);
       border-radius: 12px;
@@ -118,12 +137,18 @@
       display: flex;
       flex-direction: column;
     }
-    .venue-card.live { cursor: pointer; }
+    .venue-card.live {
+      cursor: pointer;
+    }
     .venue-card.live:hover {
       transform: translateY(-3px);
       box-shadow: 0 10px 26px rgba(84,96,62,0.14);
     }
-    .venue-card.soon { opacity: 0.72; }
+    .venue-card.soon {
+      opacity: 0.72;
+    }
+
+    /* Square logo tile with brand colour background */
     .card-tile {
       width: 100%;
       aspect-ratio: 1 / 1;
@@ -139,6 +164,7 @@
       object-fit: contain;
       object-position: center;
     }
+
     .card-body {
       padding: 14px 16px 16px;
       display: flex;
@@ -158,9 +184,18 @@
       align-items: center;
       justify-content: space-between;
     }
-    .card-status { font-size: 10px; letter-spacing: 0.2px; }
-    .status-live { display: flex; align-items: center; gap: 5px; color: #3d6b2a; }
+    .card-status {
+      font-size: 10px;
+      letter-spacing: 0.2px;
+    }
+    .status-live {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #3d6b2a;
+    }
     .status-soon { color: var(--light); }
+
     .card-btn {
       display: inline-flex;
       align-items: center;
@@ -175,11 +210,32 @@
       cursor: pointer;
       letter-spacing: 0.1px;
     }
-    .btn-live { background: var(--deep); color: white; }
+    .btn-live {
+      background: var(--deep);
+      color: white;
+    }
     .btn-live:hover { opacity: 0.82; }
-    .btn-soon { background: rgba(84,96,62,0.07); color: var(--light); cursor: default; }
-    .section-divider { border: none; border-top: 1px solid var(--border); margin: 52px 0 24px; }
-    .hub-footer { font-size: 10.5px; color: var(--light); line-height: 1.75; text-align: center; padding-bottom: 8px; }
+    .btn-soon {
+      background: rgba(84,96,62,0.07);
+      color: var(--light);
+      cursor: default;
+    }
+
+    /* ── DIVIDER / FOOTER ── */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 52px 0 24px;
+    }
+    .hub-footer {
+      font-size: 10.5px;
+      color: var(--light);
+      line-height: 1.75;
+      text-align: center;
+      padding-bottom: 8px;
+    }
+
+    /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
       .venue-grid { grid-template-columns: repeat(3, 1fr); }
       .hub-content { padding: 36px 40px 60px; }
@@ -195,39 +251,47 @@
 </head>
 <body>
 
+<!-- HEADER -->
 <div class="hub-header">
   <div class="hub-header-inner">
     <img class="hub-logo" src="assets/logos/table-for.png" alt="Table For" onerror="this.style.display='none'">
     <div class="hub-logo-divider"></div>
     <div class="hub-agency">Maybe Marketing</div>
   </div>
-  <h1 class="hub-title">Table For &nbsp;&middot;&nbsp; <span>Marketing Reports</span></h1>
+  <h1 class="hub-title"><span>Marketing Reports</span></h1>
   <div class="hub-meta">
-    <span>March 2026</span>
-    <span class="sep">&middot;</span>
-    <span>Mar 1 &ndash; Mar 31, 2026</span>
-    <span class="sep">&middot;</span>
+    <span>Prepared by Maybe Marketing</span>
+    <span class="sep">·</span>
+    <span>Mar 1 – Mar 31, 2026</span>
+    <span class="sep">·</span>
     <span class="hub-pill"><span class="dot-live"></span>1 of 12 live</span>
   </div>
 </div>
 
+<!-- CONTENT -->
 <div class="hub-content">
+
   <div class="section-label">Venues</div>
+
   <div class="venue-grid">
 
+    <!-- FLAMINIA (LIVE) · primary #536cb6, light bg so script logo reads -->
     <div class="venue-card live" onclick="location.href='flaminia-march-2026.html'">
-      <div class="card-tile" style="background:#e9f1fa">
+      <div class="card-tile" style="background:#536cb6">
         <img src="assets/logos/flaminia.png" alt="Flaminia">
       </div>
       <div class="card-body">
         <div class="venue-name">Flaminia</div>
         <div class="card-footer">
-          <span class="card-status status-live"><span class="dot-live"></span> Live</span>
-          <a class="card-btn btn-live" href="flaminia-march-2026.html">View &rarr;</a>
+          <span class="card-status status-live">
+            <span class="dot-live"></span> Live
+          </span>
+          <a class="card-btn btn-live" href="flaminia-march-2026.html">View →</a>
         </div>
       </div>
     </div>
 
+    <!-- EL VISTA · primary #426c3e dark green -->
     <div class="venue-card soon">
       <div class="card-tile" style="background:#426c3e">
         <img src="assets/logos/el-vista.png" alt="El Vista">
@@ -236,50 +300,54 @@
         <div class="venue-name">El Vista</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
+    <!-- THE CROFT HOUSE · black #000000 bg -->
     <div class="venue-card soon">
-      <div class="card-tile" style="background:#f6daba">
+      <div class="card-tile" style="background:#000000">
         <img src="assets/logos/the-croft-house.png" alt="The Croft House">
       </div>
       <div class="card-body">
         <div class="venue-name">The Croft House</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
+    <!-- ALLORA · dark red #a10000 bg -->
     <div class="venue-card soon">
-      <div class="card-tile" style="background:#f84426">
+      <div class="card-tile" style="background:#a10000">
         <img src="assets/logos/allora.png" alt="Allora">
       </div>
       <div class="card-body">
         <div class="venue-name">Allora</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
+    <!-- TUTTO · red-orange #f26a53 bg -->
     <div class="venue-card soon">
-      <div class="card-tile" style="background:#fefdef">
+      <div class="card-tile" style="background:#f26a53">
         <img src="assets/logos/tutto.png" alt="Tutto">
       </div>
       <div class="card-body">
         <div class="venue-name">Tutto</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
+    <!-- PARK & COVE · burgundy #542121, mint logo reads well -->
     <div class="venue-card soon">
       <div class="card-tile" style="background:#542121">
         <img src="assets/logos/park-and-cove.png" alt="Park &amp; Cove">
@@ -288,37 +356,40 @@
         <div class="venue-name">Park &amp; Cove</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
+    <!-- OVELLO · royal blue #21409a bg -->
     <div class="venue-card soon">
-      <div class="card-tile" style="background:#fef38b">
+      <div class="card-tile" style="background:#21409a">
         <img src="assets/logos/ovello.png" alt="Ovello">
       </div>
       <div class="card-body">
         <div class="venue-name">Ovello</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
+    <!-- HYDE · blush pink #ebb9ac bg -->
     <div class="venue-card soon">
-      <div class="card-tile" style="background:#ffffff;border-bottom:1px solid rgba(0,0,0,0.05)">
+      <div class="card-tile" style="background:#ebb9ac">
         <img src="assets/logos/hyde.png" alt="Hyde">
       </div>
       <div class="card-body">
         <div class="venue-name">Hyde</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
+    <!-- BAHA · dark green #065f1f, white logo reads well -->
     <div class="venue-card soon">
       <div class="card-tile" style="background:#065f1f">
         <img src="assets/logos/baha.png" alt="Baha">
@@ -327,58 +398,63 @@
         <div class="venue-name">Baha</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
+    <!-- OTHER SIDE OF THE MOON · warm brown #57402d bg -->
     <div class="venue-card soon">
-      <div class="card-tile" style="background:#ffffff;border-bottom:1px solid rgba(0,0,0,0.05)">
+      <div class="card-tile" style="background:#57402d">
         <img src="assets/logos/other-side-of-the-moon.png" alt="Other Side of the Moon">
       </div>
       <div class="card-body">
         <div class="venue-name">Other Side of the Moon</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
+    <!-- LA MESA · dark navy #000d4b bg -->
     <div class="venue-card soon">
-      <div class="card-tile" style="background:#f6ede4">
+      <div class="card-tile" style="background:#000d4b">
         <img src="assets/logos/la-mesa.png" alt="La Mesa">
       </div>
       <div class="card-body">
         <div class="venue-name">La Mesa</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
+    <!-- ALUCO · white #ffffff bg -->
     <div class="venue-card soon">
-      <div class="card-tile" style="background:#f4f0e8">
+      <div class="card-tile" style="background:#ffffff; border-bottom:1px solid rgba(0,0,0,0.05)">
         <img src="assets/logos/aluco.png" alt="Aluco">
       </div>
       <div class="card-body">
         <div class="venue-name">Aluco</div>
         <div class="card-footer">
           <span class="card-status status-soon">Coming soon</span>
-          <span class="card-btn btn-soon">View &rarr;</span>
+          <span class="card-btn btn-soon">View →</span>
         </div>
       </div>
     </div>
 
-  </div>
+  </div><!-- /venue-grid -->
 
   <hr class="section-divider">
+
   <p class="hub-footer">
     Reports are published monthly. Each report covers social media performance, email campaigns, design activity, and attributed revenue for the period shown.<br>
-    Data sources: Rella, Klaviyo, Sevenrooms &nbsp;&middot;&nbsp; Prepared by Maybe Marketing &nbsp;&middot;&nbsp; March 2026 &nbsp;&middot;&nbsp; Confidential
+    Data sources: Rella, Klaviyo, Sevenrooms &nbsp;·&nbsp; Prepared by Maybe Marketing &nbsp;·&nbsp; March 2026 &nbsp;·&nbsp; Confidential
   </p>
-</div>
+
+</div><!-- /hub-content -->
 
 </body>
 </html>
