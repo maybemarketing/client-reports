@@ -2,7 +2,7 @@
 <html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hyde ÃÂ¢ÃÂÃÂ March 2026 Marketing Report</title>
+  <title>Hyde — March 2026 Marketing Report</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
   <style>
     :root {
@@ -30,7 +30,7 @@
       min-height: 100vh;
     }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ NAV ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── NAV ── */
     nav {
       background: var(--blue);
       padding: 0 40px;
@@ -62,7 +62,7 @@
     .tab.active { color: var(--white); background: var(--blue-dark); }
     .period { color: rgba(255,255,255,0.45); font-size: 12px; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ HERO ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── HERO ── */
     .hero {
       background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 65%, var(--blue-light) 100%);
       color: var(--white);
@@ -73,12 +73,12 @@
     .hero h1 em { color: rgba(255,255,255,0.65); font-style: normal; }
     .hero p { color: rgba(255,255,255,0.5); font-size: 13px; letter-spacing: 0.5px; margin-bottom: 0; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ LAYOUT ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── LAYOUT ── */
     main { max-width: 1100px; margin: 0 auto; padding: 32px 40px 60px; }
     .section { display: none; }
     .section.active { display: block; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ SECTION HEADER ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── SECTION HEADER ── */
     .sh {
       margin-bottom: 24px;
       padding-bottom: 14px;
@@ -98,12 +98,12 @@
       letter-spacing: 0.4px;
     }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ GRIDS ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── GRIDS ── */
     .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
     .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
     .g4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 20px; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ BASE CARD ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── BASE CARD ── */
     .card {
       background: var(--white);
       border-radius: 10px;
@@ -116,12 +116,12 @@
     .card-sub { font-size: 12px; color: var(--mid); }
     .card-grow { font-size: 13px; color: var(--green); margin-top: 4px; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ PLATFORM PILL ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── PLATFORM PILL ── */
     .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
     .pill-ig { background: rgba(225,48,108,0.1); color: var(--instagram); }
     .pill-fb { background: rgba(24,119,242,0.1); color: var(--facebook); }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ CHART CARD ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── CHART CARD ── */
     .chart-card {
       background: var(--white);
       border-radius: 10px;
@@ -133,7 +133,7 @@
     .chart-card h3 { font-size: 13px; font-weight: normal; color: var(--mid); letter-spacing: 0.5px; margin-bottom: 16px; }
     .chart-wrap { position: relative; height: 220px; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ REVENUE SECTION ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── REVENUE SECTION ── */
     .revenue-card {
       background: var(--white);
       border-radius: 10px;
@@ -186,7 +186,7 @@
     .ig-bar-pct { font-size: 12px; color: var(--mid); width: 44px; text-align: right; }
     .rev-note { font-size: 12.5px; color: var(--dark); line-height: 1.6; background: rgba(83,108,182,0.07); border-left: 3px solid var(--blue); border-radius: 0 8px 8px 0; padding: 13px 16px; margin-top: 16px; font-style: normal; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ POSTS CONTROLS ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── POSTS CONTROLS ── */
     .posts-head {
       display: flex;
       align-items: center;
@@ -218,7 +218,7 @@
     }
     .metric-select:focus { border-color: var(--blue); }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ POST CARDS ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── POST CARDS ── */
     .posts-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-bottom: 8px; }
     .post-card {
       background: var(--white);
@@ -283,7 +283,7 @@
     .post-view-link:hover { text-decoration: underline; }
     .post-view-pending { font-size: 11px; color: var(--light); letter-spacing: 0.3px; font-style: italic; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ EMAIL ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── EMAIL ── */
     .email-ov { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 20px; }
     .camp-list { margin-bottom: 20px; }
     .camp-item {
@@ -308,7 +308,7 @@
     .s-sched { background: rgba(83,108,182,0.13); color: var(--blue); }
     .s-draft { background: var(--sky); color: var(--mid); }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ DESIGN ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── DESIGN ── */
     .deliv {
       background: var(--white);
       border-radius: 10px;
@@ -327,7 +327,7 @@
     .hrs-bar { flex: 1; height: 4px; background: var(--sky); border-radius: 2px; overflow: hidden; }
     .hrs-fill { height: 100%; background: var(--blue); border-radius: 2px; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ POST THUMB ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── POST THUMB ── */
     .post-thumb {
       aspect-ratio: 4/5;
       overflow: hidden;
@@ -349,11 +349,11 @@
       justify-content: center;
     }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ RETAINER BAR ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── RETAINER BAR ── */
     .ret-bar-track { height: 18px; background: var(--sky); border-radius: 9px; overflow: hidden; margin: 12px 0 6px; }
     .ret-bar-fill { height: 100%; border-radius: 9px; background: linear-gradient(90deg, var(--blue-dark), var(--blue)); transition: width 1s ease; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ NOTE ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── NOTE ── */
     .note { font-size: 12px; color: var(--mid); background: var(--sky); padding: 10px 16px; border-radius: 8px; margin-bottom: 20px; line-height: 1.55; }
     .note strong { color: var(--charcoal); }
 
@@ -429,33 +429,33 @@
 
 <!-- NAV -->
 <nav>
-  <div class="brand">Hyde <span>ÃÂÃÂ·</span> March 2026</div>
+  <div class="brand">Hyde <span>·</span> March 2026</div>
   <div class="tabs">
     <button class="tab active" onclick="showSection('social', this)">Social Media</button>
     <button class="tab" onclick="showSection('email', this)">Email</button>
     <button class="tab" onclick="showSection('design', this)">Design</button>
   </div>
-  <div class="period">Mar 1 ÃÂ¢ÃÂÃÂ Mar 31, 2026</div>
+  <div class="period">Mar 1 – Mar 31, 2026</div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-inner">
     <h1>Hyde <em>Marketing Report</em></h1>
-    <p>March 2026 &nbsp;ÃÂÃÂ·&nbsp; Mar 1 ÃÂ¢ÃÂÃÂ Mar 31 &nbsp;ÃÂÃÂ·&nbsp; Sydney</p>
+    <p>March 2026 &nbsp;·&nbsp; Mar 1 – Mar 31 &nbsp;·&nbsp; Sydney</p>
   </div>
 </div>
 
 <main>
 
-<!-- ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
+<!-- ═══════════════════════════════════════
      SOCIAL MEDIA
-ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ -->
+════════════════════════════════════════ -->
 <section id="social" class="section active">
 
   <div class="sh">
     <h2>Social Media <span>Performance</span></h2>
-    <span class="badge">Mar 1 ÃÂ¢ÃÂÃÂ Mar 26, 2026 ÃÂÃÂ· Rella</span>
+    <span class="badge">Mar 1 – Mar 26, 2026 · Rella</span>
   </div>
 
   <!-- Overview KPIs -->
@@ -491,28 +491,28 @@
   <!-- Platform breakdown -->
   <div class="g2">
     <div class="card">
-      <div class="pill pill-ig">ÃÂ¢ÃÂÃÂ Instagram</div>
+      <div class="pill pill-ig">● Instagram</div>
       <div class="plat-grid">
         <div><div style="font-size:21px;">216</div><div class="card-sub">Interactions</div></div>
         <div><div style="font-size:21px;">11.5%</div><div class="card-sub">Engagement</div></div>
         <div><div style="font-size:21px;">1,880</div><div class="card-sub">Reach</div></div>
         <div><div style="font-size:21px;color:var(--green);">-4</div><div class="card-sub">Growth</div></div>
       </div>
-      <div style="margin-top:12px;font-size:11px;color:var(--light);">10,587 total followers · primary channel</div>
+      <div style="margin-top:12px;font-size:11px;color:var(--light);">10,587 total followers � primary channel</div>
     </div>
     <div class="card">
-      <div class="pill pill-fb">ÃÂ¢ÃÂÃÂ Facebook</div>
+      <div class="pill pill-fb">● Facebook</div>
       <div class="plat-grid">
         <div><div style="font-size:21px;">0</div><div class="card-sub">Interactions</div></div>
         <div><div style="font-size:21px;">0.0%</div><div class="card-sub">Engagement</div></div>
         <div><div style="font-size:21px;">121</div><div class="card-sub">Reach</div></div>
         <div><div style="font-size:21px;color:var(--green);">-2</div><div class="card-sub">Growth</div></div>
       </div>
-      <div style="margin-top:12px;font-size:11px;color:var(--light);">3,927 total followers · secondary channel</div>
+      <div style="margin-top:12px;font-size:11px;color:var(--light);">3,927 total followers � secondary channel</div>
     </div>
   </div>
 
-  <!-- Top Posts ÃÂ¢ÃÂÃÂ Sortable -->
+  <!-- Top Posts — Sortable -->
   <div class="posts-head">
     <h2>Top Performing <span>Posts</span></h2>
     <div class="sort-wrap">
@@ -530,12 +530,12 @@
   <!-- Attributed Revenue -->
   <div class="sh" style="margin-top:28px;">
     <h2>Attributed <span>Revenue</span></h2>
-    <span class="badge">Sevenrooms ÃÂÃÂ· Mar 1 ÃÂ¢ÃÂÃÂ Mar 31, 2026</span>
+    <span class="badge">Sevenrooms · Mar 1 – Mar 31, 2026</span>
   </div>
 
   <!-- Instagram Revenue -->
   <div class="revenue-card">
-    <h3>Instagram Attributed Revenue &nbsp;ÃÂÃÂ·&nbsp; via Instagram booking link</h3>
+    <h3>Instagram Attributed Revenue &nbsp;·&nbsp; via Instagram booking link</h3>
     <div class="rev-grid">
       <div class="rev-total">
         <div class="rtl">Total March Revenue</div>
@@ -544,7 +544,7 @@
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill pill-ig" style="margin:0;">ÃÂ¢ÃÂÃÂ Instagram</div>
+          <div class="pill pill-ig" style="margin:0;">● Instagram</div>
           <span style="font-size:12px;color:var(--mid);">attributed via Instagram tracking link</span>
         </div>
         <div class="ig-stats-row">
@@ -572,14 +572,14 @@
           </div>
           <div class="ig-bar-pct">0.20%</div>
         </div>
-        <div class="rev-note">Revenue reflects bookings made directly through the Instagram booking link. The majority of Instagram-influenced reservations arrive via phone, walk-in, or direct web ÃÂ¢ÃÂÃÂ and are not separately attributed in this report.</div>
+        <div class="rev-note">Revenue reflects bookings made directly through the Instagram booking link. The majority of Instagram-influenced reservations arrive via phone, walk-in, or direct web — and are not separately attributed in this report.</div>
       </div>
     </div>
   </div>
 
   <!-- Facebook Revenue -->
   <div class="revenue-card">
-    <h3>Facebook Attributed Revenue &nbsp;ÃÂÃÂ·&nbsp; via Facebook booking link</h3>
+    <h3>Facebook Attributed Revenue &nbsp;·&nbsp; via Facebook booking link</h3>
     <div class="rev-grid">
       <div class="rev-total" style="background:linear-gradient(135deg,#1254c0 0%,#1877F2 100%);">
         <div class="rtl">Total March Revenue</div>
@@ -588,7 +588,7 @@
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill pill-fb" style="margin:0;">ÃÂ¢ÃÂÃÂ Facebook</div>
+          <div class="pill pill-fb" style="margin:0;">● Facebook</div>
           <span style="font-size:12px;color:var(--mid);">attributed via Facebook tracking link</span>
         </div>
         <div class="ig-stats-row">
@@ -616,21 +616,21 @@
           </div>
           <div class="ig-bar-pct">0%</div>
         </div>
-        <div class="rev-note">No bookings were tracked through the Facebook booking link this period. Facebook remains a secondary channel (105 followers) ÃÂ¢ÃÂÃÂ revenue influence is primarily indirect.</div>
+        <div class="rev-note">No bookings were tracked through the Facebook booking link this period. Facebook remains a secondary channel (105 followers) — revenue influence is primarily indirect.</div>
       </div>
     </div>
   </div>
 
 </section>
 
-<!-- ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
+<!-- ═══════════════════════════════════════
      EMAIL
-ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ -->
+════════════════════════════════════════ -->
 <section id="email" class="section">
 
   <div class="sh">
     <h2>Email Marketing <span>Performance</span></h2>
-    <span class="badge">March 2026 ÃÂÃÂ· Sevenrooms</span>
+    <span class="badge">March 2026 · Sevenrooms</span>
   </div>
 
   <div class="email-ov">
@@ -642,7 +642,7 @@
     <div class="card">
       <div class="card-title">Avg Open Rate</div>
       <div class="card-value">29%</div>
-      <div class="card-sub">Industry avg ~20ÃÂ¢ÃÂÃÂ25%</div>
+      <div class="card-sub">Industry avg ~20–25%</div>
     </div>
     <div class="card">
       <div class="card-title">Avg Click Rate</div>
@@ -652,22 +652,22 @@
     <div class="card">
       <div class="card-title">Attributed Revenue</div>
       <div class="card-value">A$200</div>
-      <div class="card-sub">1 reservation ÃÂ· 4 covers</div>
+      <div class="card-sub">1 reservation � 4 covers</div>
     </div>
   </div>
 
   <!-- Email Revenue -->
   <div class="revenue-card">
-    <h3>Email Attributed Revenue &nbsp;ÃÂÃÂ·&nbsp; Sevenrooms Booked By Report &nbsp;ÃÂÃÂ·&nbsp; March 2026</h3>
+    <h3>Email Attributed Revenue &nbsp;·&nbsp; Sevenrooms Booked By Report &nbsp;·&nbsp; March 2026</h3>
     <div class="rev-grid">
       <div class="rev-total">
         <div class="rtl">Total March Revenue</div>
-        <div class="rtv">Ã¢ÂÂ</div>
+        <div class="rtv">—</div>
         <div class="rts">All booking channels combined</div>
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill" style="margin:0;background:rgba(83,108,182,0.12);color:var(--blue);">ÃÂ¢ÃÂÃÂ Email</div>
+          <div class="pill" style="margin:0;background:rgba(83,108,182,0.12);color:var(--blue);">✉ Email</div>
           <span style="font-size:12px;color:var(--mid);">attributed via EDM tracking links</span>
         </div>
         <div class="ig-stats-row">
@@ -693,7 +693,7 @@
           <div class="ig-bar-track">
             <div class="ig-bar-fill" style="width: 0%; background: var(--blue);"></div>
           </div>
-          <div class="ig-bar-pct">Ã¢ÂÂ</div>
+          <div class="ig-bar-pct">—</div>
         </div>
         
       </div>
@@ -702,10 +702,10 @@
 
   <div class="sh">
     <h2>Email <span>Campaigns</span></h2>
-    <span class="badge">1 sent ÃÂ· 1 scheduled ÃÂ· 2 drafts</span>
+    <span class="badge">1 sent � 1 scheduled � 2 drafts</span>
   </div>
 
-  <div class="camp-list"><div class="camp-item"><div><div><div class="camp-name">March WhatÃ¢ÂÂs On EDM</div><span class="sbadge s-sent">Sent</span></div><div class="camp-meta">Sent Thu 26 Mar 2026 ÃÂ· to Marketing Opt-Ins</div></div><div class="camp-stats"><div class="cs"><div class="v">6,174</div><div class="l">Recipients</div></div><div class="cs"><div class="v">29%</div><div class="l">Open Rate</div></div><div class="cs"><div class="v">4%</div><div class="l">Click Rate</div></div><div class="cs"><div class="v">217</div><div class="l">Clicks</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">Bottomless Lunch Solus EDM</div><span class="sbadge s-sched">Scheduled</span></div><div class="camp-meta">Scheduled Tue 31 Mar 2026 11:30 ÃÂ· 6,202 guests on list</div></div><div class="camp-stats"><div class="cs"><div class="v">6,202</div><div class="l">Recipients</div></div><div class="cs"><div class="v">Ã¢ÂÂ</div><div class="l">Open Rate</div></div><div class="cs"><div class="v">Ã¢ÂÂ</div><div class="l">Click Rate</div></div><div class="cs"><div class="v">Ã¢ÂÂ</div><div class="l">Clicks</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">[TEMPLATE] Solus EDM</div><span class="sbadge s-draft">Draft</span></div><div class="camp-meta">Draft</div></div><div class="camp-stats"><div class="cs"><div class="v">Ã¢ÂÂ</div><div class="l">Recipients</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">[TEMPLATE] WhatÃ¢ÂÂs On EDM</div><span class="sbadge s-draft">Draft</span></div><div class="camp-meta">Draft</div></div><div class="camp-stats"><div class="cs"><div class="v">Ã¢ÂÂ</div><div class="l">Recipients</div></div></div></div></div>
+  <div class="camp-list"><div class="camp-item"><div><div><div class="camp-name">March What’s On EDM</div><span class="sbadge s-sent">Sent</span></div><div class="camp-meta">Sent Thu 26 Mar 2026 � to Marketing Opt-Ins</div></div><div class="camp-stats"><div class="cs"><div class="v">6,174</div><div class="l">Recipients</div></div><div class="cs"><div class="v">29%</div><div class="l">Open Rate</div></div><div class="cs"><div class="v">4%</div><div class="l">Click Rate</div></div><div class="cs"><div class="v">217</div><div class="l">Clicks</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">Bottomless Lunch Solus EDM</div><span class="sbadge s-sched">Scheduled</span></div><div class="camp-meta">Scheduled Tue 31 Mar 2026 11:30 � 6,202 guests on list</div></div><div class="camp-stats"><div class="cs"><div class="v">6,202</div><div class="l">Recipients</div></div><div class="cs"><div class="v">—</div><div class="l">Open Rate</div></div><div class="cs"><div class="v">—</div><div class="l">Click Rate</div></div><div class="cs"><div class="v">—</div><div class="l">Clicks</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">[TEMPLATE] Solus EDM</div><span class="sbadge s-draft">Draft</span></div><div class="camp-meta">Draft</div></div><div class="camp-stats"><div class="cs"><div class="v">—</div><div class="l">Recipients</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">[TEMPLATE] What’s On EDM</div><span class="sbadge s-draft">Draft</span></div><div class="camp-meta">Draft</div></div><div class="camp-stats"><div class="cs"><div class="v">—</div><div class="l">Recipients</div></div></div></div></div>
 
   <div class="chart-card">
     <h3>Campaign Open Rate Comparison</h3>
@@ -715,9 +715,9 @@
 
 </section>
 
-<!-- ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
+<!-- ═══════════════════════════════════════
      DESIGN
-ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ -->
+════════════════════════════════════════ -->
 <section id="design" class="section">
 
   
@@ -726,25 +726,25 @@
     <div class="card">
       <div class="card-title">REPORTING PERIOD DESIGN HOURS</div>
       <div class="card-value">3h 45m</div>
-      <div class="card-sub">Reporting Period: March 2026 &nbsp;ÃÂÃÂ·&nbsp; 225 min tracked</div>
+      <div class="card-sub">Reporting Period: March 2026 &nbsp;·&nbsp; 225 min tracked</div>
     </div>
     <div class="card">
       <div class="card-title">Completed Deliverables</div>
       <div class="card-value">1</div>
-      <div class="card-sub">March 2026 ÃÂÃÂ· Design Requests</div>
+      <div class="card-sub">March 2026 · Design Requests</div>
     </div>
   </div>
 
   <div class="sh">
     <h2>Completed <span>Work</span></h2>
-    <span class="badge">March 2026 ÃÂÃÂ· Asana Design Tracker</span>
+    <span class="badge">March 2026 · Asana Design Tracker</span>
   </div>
 
   <!-- Deliverable -->
   
 
-  <div class="deliv"><div class="deliv-head"><div><div class="deliv-name">Valentineâs Day Assets</div><div class="deliv-sec">Design Requests</div></div><div><div class="deliv-date">Completed 9 Mar 2026</div><div></div></div></div><div class="deliv-tags"><span class="dtag">Seasonal Campaign</span><span class="dtag">Valentineâs Day</span><span class="dtag">Digital Asset</span></div><div></div><div class="deliv-hrs"><span>â</span><div class="hrs-bar"><div class="hrs-fill" style="width:0%;"></div></div><span>â</span></div></div><div class="chart-card" style="margin-top:8px;">
-    <h3>Design Hours by Deliverable &nbsp;ÃÂÃÂ·&nbsp; March 2026</h3>
+  <div class="deliv"><div class="deliv-head"><div><div class="deliv-name">Valentine’s Day Assets</div><div class="deliv-sec">Design Requests</div></div><div><div class="deliv-date">Completed 9 Mar 2026</div><div></div></div></div><div class="deliv-tags"><span class="dtag">Seasonal Campaign</span><span class="dtag">Valentine’s Day</span><span class="dtag">Digital Asset</span></div><div></div><div class="deliv-hrs"><span>—</span><div class="hrs-bar"><div class="hrs-fill" style="width:0%;"></div></div><span>—</span></div></div><div class="chart-card" style="margin-top:8px;">
+    <h3>Design Hours by Deliverable &nbsp;·&nbsp; March 2026</h3>
     <div class="chart-wrap"><canvas id="hoursChart"></canvas></div>
   </div>
 
@@ -775,13 +775,13 @@
     </div>
     <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--light);margin-top:2px;">
       <span>0h</span>
-      <span style="color:var(--blue);">5h 16m used &nbsp;ÃÂÃÂ·&nbsp; 14.6% of annual retainer</span>
+      <span style="color:var(--blue);">5h 16m used &nbsp;·&nbsp; 14.6% of annual retainer</span>
       <span>36h total</span>
     </div>
   </div>
 
   <div class="chart-card">
-    <h3>All Retainer Hours by Project &nbsp;ÃÂÃÂ·&nbsp; Year to Date</h3>
+    <h3>All Retainer Hours by Project &nbsp;·&nbsp; Year to Date</h3>
     <div class="chart-wrap"><canvas id="retainerChart"></canvas></div>
   </div>
 
@@ -790,7 +790,7 @@
 </main>
 
 <script>
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Navigation ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Navigation ─── */
   function showSection(id, btn) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -798,13 +798,13 @@
     btn.classList.add('active');
   }
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Posts data (Q1 2026, Rella) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Posts data (Q1 2026, Rella) ─── */
   /* imageUrl: paste the direct Instagram post image URL from Rella to enable thumbnails */
   /* postUrl:  paste the Instagram permalink (e.g. https://www.instagram.com/p/XXXXX/) to make card clickable */
   const postsData = [
     {
       type: 'Carousel',
-      caption: 'Maialetto is more than a dish ÃÂ¢ÃÂÃÂ it\'s a story tied to @chefgiovannipilu\'s Sardinian roots. Slow-roasted, deeply rooted in tradition.',
+      caption: 'Maialetto is more than a dish — it\'s a story tied to @chefgiovannipilu\'s Sardinian roots. Slow-roasted, deeply rooted in tradition.',
       views: 4000, likes: 75, comments: 0, engagement: 7.8,
       gradient: 'linear-gradient(145deg, #3A5299 0%, #536CB6 55%, #7A94CF 100%)',
       imageUrl: 'https://maybemarketing.github.io/client-reports/assets/post-maialetto.jpg',
@@ -820,7 +820,7 @@
     },
     {
       type: 'Carousel',
-      caption: 'Tonno. From the cold, clean waters of Bermagui on the south coast of NSW ÃÂ¢ÃÂÃÂ a delicate, lean yellowfin with a light minerality.',
+      caption: 'Tonno. From the cold, clean waters of Bermagui on the south coast of NSW — a delicate, lean yellowfin with a light minerality.',
       views: 3000, likes: 81, comments: 1, engagement: 7.1,
       gradient: 'linear-gradient(145deg, #2C3E7A 0%, #536CB6 100%)',
       imageUrl: 'https://maybemarketing.github.io/client-reports/assets/post-tonno.jpg',
@@ -836,7 +836,7 @@
     },
     {
       type: 'Reel',
-      caption: 'Episode 3: Merluzzo. Chef @chefgiovannipilu works with Murray cod ÃÂ¢ÃÂÃÂ one of the most beautiful fish we have. Farmed, sustainable.',
+      caption: 'Episode 3: Merluzzo. Chef @chefgiovannipilu works with Murray cod — one of the most beautiful fish we have. Farmed, sustainable.',
       views: 2200, likes: 48, comments: 3, engagement: 4.3,
       gradient: 'linear-gradient(145deg, #7A94CF 0%, #B8CEE8 60%, #E9F1FA 100%)',
       imageUrl: 'https://maybemarketing.github.io/client-reports/assets/post-merluzzo.jpg',
@@ -844,7 +844,7 @@
     },
     {
       type: 'Carousel',
-      caption: 'Palermo. A port city without rules ÃÂ¢ÃÂÃÂ buzzy, busy, and untamed. @chefgiovannipilu shares why that feels electric ÃÂ¢ÃÂÃÂ and how it lives on our menu.',
+      caption: 'Palermo. A port city without rules — buzzy, busy, and untamed. @chefgiovannipilu shares why that feels electric — and how it lives on our menu.',
       views: 2100, likes: 49, comments: 0, engagement: 6.2,
       gradient: 'linear-gradient(145deg, #4A6AAE 0%, #6B89C8 100%)',
       imageUrl: 'https://maybemarketing.github.io/client-reports/assets/post-palermo.jpg',
@@ -860,7 +860,7 @@
     },
     {
       type: 'Image',
-      caption: 'Paccheri on pass ÃÂ¢ÃÂÃÂ narrated by @chefgiovannipilu.',
+      caption: 'Paccheri on pass — narrated by @chefgiovannipilu.',
       views: 1600, likes: 38, comments: 1, engagement: 4.9,
       gradient: 'linear-gradient(145deg, #3A5299 0%, #7A94CF 100%)',
       imageUrl: 'https://maybemarketing.github.io/client-reports/assets/post-paccheri.jpg',
@@ -903,7 +903,7 @@
         : `<div class="post-thumb-fallback" style="background:${p.gradient};"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="rgba(255,255,255,0.55)"/></svg></div>`;
 
       const viewLinkHTML = p.postUrl
-        ? `<a class="post-view-link" href="${p.postUrl}" target="_blank" rel="noopener">View on Instagram ÃÂ¢ÃÂÃÂ</a>`
+        ? `<a class="post-view-link" href="${p.postUrl}" target="_blank" rel="noopener">View on Instagram ↗</a>`
         : '';
 
       const card = document.createElement('div');
@@ -919,7 +919,7 @@
         <div class="post-body">
           <div class="post-rank-row">
             <span class="rank-badge${rank === 1 ? ' r1' : ''}">${rank}</span>
-            <span class="rank-platform">Instagram &nbsp;ÃÂÃÂ·&nbsp; ${p.type}</span>
+            <span class="rank-platform">Instagram &nbsp;·&nbsp; ${p.type}</span>
           </div>
           <div class="post-caption">${p.caption}</div>
           <div class="post-metrics">${metricsHTML}</div>
@@ -937,12 +937,12 @@
   function sortPosts(metric) { renderPosts(metric); }
   renderPosts('views');
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Chart palette ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Chart palette ─── */
   const C = { blue: '#536CB6', light: '#7A94CF', sky: '#D8E8F5', green: '#3D8C5E' };
   Chart.defaults.font.family = 'Georgia, serif';
   Chart.defaults.color = '#6B6B6B';
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Email open rate chart ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Email open rate chart ─── */
   new Chart(document.getElementById('emailChart'), {
     type: 'bar',
     data: {
@@ -977,7 +977,7 @@
     return h > 0 ? `${h}h ${m > 0 ? m + 'm' : ''}` : `${m}m`;
   };
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Design hours chart (March) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Design hours chart (March) ─── */
   new Chart(document.getElementById('hoursChart'), {
     type: 'bar',
     data: {
@@ -1002,7 +1002,7 @@
     }
   });
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Annual retainer chart (all projects + remaining) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Annual retainer chart (all projects + remaining) ─── */
   new Chart(document.getElementById('retainerChart'), {
     type: 'doughnut',
     data: {
