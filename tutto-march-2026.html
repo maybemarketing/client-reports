@@ -2,7 +2,7 @@
 <html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tutto â March 2026 Marketing Report</title>
+  <title>Tutto Ã¢ÂÂ March 2026 Marketing Report</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
   <style>
     :root {
@@ -30,7 +30,7 @@
       min-height: 100vh;
     }
 
-    /* ââ NAV ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ NAV Ã¢ÂÂÃ¢ÂÂ */
     nav {
       background: var(--blue);
       padding: 0 40px;
@@ -62,7 +62,7 @@
     .tab.active { color: var(--white); background: var(--blue-dark); }
     .period { color: rgba(255,255,255,0.45); font-size: 12px; }
 
-    /* ââ HERO ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ HERO Ã¢ÂÂÃ¢ÂÂ */
     .hero {
       background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 65%, var(--blue-light) 100%);
       color: var(--white);
@@ -73,12 +73,12 @@
     .hero h1 em { color: rgba(255,255,255,0.65); font-style: normal; }
     .hero p { color: rgba(255,255,255,0.5); font-size: 13px; letter-spacing: 0.5px; margin-bottom: 0; }
 
-    /* ââ LAYOUT ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ LAYOUT Ã¢ÂÂÃ¢ÂÂ */
     main { max-width: 1100px; margin: 0 auto; padding: 32px 40px 60px; }
     .section { display: none; }
     .section.active { display: block; }
 
-    /* ââ SECTION HEADER ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ SECTION HEADER Ã¢ÂÂÃ¢ÂÂ */
     .sh {
       margin-bottom: 24px;
       padding-bottom: 14px;
@@ -98,12 +98,12 @@
       letter-spacing: 0.4px;
     }
 
-    /* ââ GRIDS ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ GRIDS Ã¢ÂÂÃ¢ÂÂ */
     .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
     .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
     .g4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 20px; }
 
-    /* ââ BASE CARD ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ BASE CARD Ã¢ÂÂÃ¢ÂÂ */
     .card {
       background: var(--white);
       border-radius: 10px;
@@ -116,12 +116,12 @@
     .card-sub { font-size: 12px; color: var(--mid); }
     .card-grow { font-size: 13px; color: var(--green); margin-top: 4px; }
 
-    /* ââ PLATFORM PILL ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ PLATFORM PILL Ã¢ÂÂÃ¢ÂÂ */
     .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
     .pill-ig { background: rgba(225,48,108,0.1); color: var(--instagram); }
     .pill-fb { background: rgba(24,119,242,0.1); color: var(--facebook); }
 
-    /* ââ CHART CARD ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ CHART CARD Ã¢ÂÂÃ¢ÂÂ */
     .chart-card {
       background: var(--white);
       border-radius: 10px;
@@ -133,7 +133,7 @@
     .chart-card h3 { font-size: 13px; font-weight: normal; color: var(--mid); letter-spacing: 0.5px; margin-bottom: 16px; }
     .chart-wrap { position: relative; height: 220px; }
 
-    /* ââ REVENUE SECTION ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ REVENUE SECTION Ã¢ÂÂÃ¢ÂÂ */
     .revenue-card {
       background: var(--white);
       border-radius: 10px;
@@ -186,7 +186,7 @@
     .ig-bar-pct { font-size: 12px; color: var(--mid); width: 44px; text-align: right; }
     .rev-note { font-size: 12.5px; color: var(--dark); line-height: 1.6; background: rgba(83,108,182,0.07); border-left: 3px solid var(--blue); border-radius: 0 8px 8px 0; padding: 13px 16px; margin-top: 16px; font-style: normal; }
 
-    /* ââ POSTS CONTROLS ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ POSTS CONTROLS Ã¢ÂÂÃ¢ÂÂ */
     .posts-head {
       display: flex;
       align-items: center;
@@ -218,7 +218,7 @@
     }
     .metric-select:focus { border-color: var(--blue); }
 
-    /* ââ POST CARDS ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ POST CARDS Ã¢ÂÂÃ¢ÂÂ */
     .posts-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-bottom: 8px; }
     .post-card {
       background: var(--white);
@@ -283,7 +283,7 @@
     .post-view-link:hover { text-decoration: underline; }
     .post-view-pending { font-size: 11px; color: var(--light); letter-spacing: 0.3px; font-style: italic; }
 
-    /* ââ EMAIL ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ EMAIL Ã¢ÂÂÃ¢ÂÂ */
     .email-ov { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 20px; }
     .camp-list { margin-bottom: 20px; }
     .camp-item {
@@ -308,7 +308,7 @@
     .s-sched { background: rgba(83,108,182,0.13); color: var(--blue); }
     .s-draft { background: var(--sky); color: var(--mid); }
 
-    /* ââ DESIGN ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ DESIGN Ã¢ÂÂÃ¢ÂÂ */
     .deliv {
       background: var(--white);
       border-radius: 10px;
@@ -327,7 +327,7 @@
     .hrs-bar { flex: 1; height: 4px; background: var(--sky); border-radius: 2px; overflow: hidden; }
     .hrs-fill { height: 100%; background: var(--blue); border-radius: 2px; }
 
-    /* ââ POST THUMB ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ POST THUMB Ã¢ÂÂÃ¢ÂÂ */
     .post-thumb {
       aspect-ratio: 4/5;
       overflow: hidden;
@@ -349,11 +349,11 @@
       justify-content: center;
     }
 
-    /* ââ RETAINER BAR ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ RETAINER BAR Ã¢ÂÂÃ¢ÂÂ */
     .ret-bar-track { height: 18px; background: var(--sky); border-radius: 9px; overflow: hidden; margin: 12px 0 6px; }
     .ret-bar-fill { height: 100%; border-radius: 9px; background: linear-gradient(90deg, var(--blue-dark), var(--blue)); transition: width 1s ease; }
 
-    /* ââ NOTE ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ NOTE Ã¢ÂÂÃ¢ÂÂ */
     .note { font-size: 12px; color: var(--mid); background: var(--sky); padding: 10px 16px; border-radius: 8px; margin-bottom: 20px; line-height: 1.55; }
     .note strong { color: var(--charcoal); }
 
@@ -429,33 +429,33 @@
 
 <!-- NAV -->
 <nav>
-  <div class="brand">Tutto <span>Â·</span> March 2026</div>
+  <div class="brand">Tutto <span>ÃÂ·</span> March 2026</div>
   <div class="tabs">
     <button class="tab active" onclick="showSection('social', this)">Social Media</button>
     
     <button class="tab" onclick="showSection('design', this)">Design</button>
   </div>
-  <div class="period">Mar 1 â Mar 31, 2026</div>
+  <div class="period">Mar 1 Ã¢ÂÂ Mar 31, 2026</div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-inner">
     <h1>Tutto <em>Marketing Report</em></h1>
-    <p>March 2026 &nbsp;Â·&nbsp; Mar 1 â Mar 31 &nbsp;Â·&nbsp; Sydney</p>
+    <p>March 2026 &nbsp;ÃÂ·&nbsp; Mar 1 Ã¢ÂÂ Mar 31 &nbsp;ÃÂ·&nbsp; Sydney</p>
   </div>
 </div>
 
 <main>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
      SOCIAL MEDIA
-ââââââââââââââââââââââââââââââââââââââââ -->
+Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
 <section id="social" class="section active">
 
   <div class="sh">
     <h2>Social Media <span>Performance</span></h2>
-    <span class="badge">Mar 1 â Mar 30, 2026 Â· Rella</span>
+    <span class="badge">Mar 1 Ã¢ÂÂ Mar 30, 2026 ÃÂ· Rella</span>
   </div>
 
   <!-- Overview KPIs -->
@@ -491,28 +491,28 @@
   <!-- Platform breakdown -->
   <div class="g2">
     <div class="card">
-      <div class="pill pill-ig">â Instagram</div>
+      <div class="pill pill-ig">Ã¢ÂÂ Instagram</div>
       <div class="plat-grid">
         <div><div style="font-size:21px;">340</div><div class="card-sub">Interactions</div></div>
         <div><div style="font-size:21px;">19.7%</div><div class="card-sub">Engagement</div></div>
         <div><div style="font-size:21px;">1,728</div><div class="card-sub">Reach</div></div>
         <div><div style="font-size:21px;color:var(--green);">-4</div><div class="card-sub">Growth</div></div>
       </div>
-      <div style="margin-top:12px;font-size:11px;color:var(--light);">4,284 total followers Â· primary channel</div>
+      <div style="margin-top:12px;font-size:11px;color:var(--light);">4,284 total followers ÃÂ· primary channel</div>
     </div>
     <div class="card">
-      <div class="pill pill-fb">â Facebook</div>
+      <div class="pill pill-fb">Ã¢ÂÂ Facebook</div>
       <div class="plat-grid">
         <div><div style="font-size:21px;">1</div><div class="card-sub">Interactions</div></div>
         <div><div style="font-size:21px;">2.6%</div><div class="card-sub">Engagement</div></div>
         <div><div style="font-size:21px;">38</div><div class="card-sub">Reach</div></div>
         <div><div style="font-size:21px;color:var(--green);">+2</div><div class="card-sub">Growth</div></div>
       </div>
-      <div style="margin-top:12px;font-size:11px;color:var(--light);">633 total followers Â· secondary channel</div>
+      <div style="margin-top:12px;font-size:11px;color:var(--light);">633 total followers ÃÂ· secondary channel</div>
     </div>
   </div>
 
-  <!-- Top Posts â Sortable -->
+  <!-- Top Posts Ã¢ÂÂ Sortable -->
   <div class="posts-head">
     <h2>Top Performing <span>Posts</span></h2>
     <div class="sort-wrap">
@@ -530,12 +530,12 @@
   <!-- Attributed Revenue -->
   <div class="sh" style="margin-top:28px;">
     <h2>Attributed <span>Revenue</span></h2>
-    <span class="badge">Sevenrooms Â· Mar 1 â Mar 31, 2026</span>
+    <span class="badge">Sevenrooms ÃÂ· Mar 1 Ã¢ÂÂ Mar 31, 2026</span>
   </div>
 
   <!-- Instagram Revenue -->
   <div class="revenue-card">
-    <h3>Instagram Attributed Revenue &nbsp;Â·&nbsp; via Instagram booking link</h3>
+    <h3>Instagram Attributed Revenue &nbsp;ÃÂ·&nbsp; via Instagram booking link</h3>
     <div class="rev-grid">
       <div class="rev-total">
         <div class="rtl">Total March Revenue</div>
@@ -544,20 +544,20 @@
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill pill-ig" style="margin:0;">â Instagram</div>
+          <div class="pill pill-ig" style="margin:0;">Ã¢ÂÂ Instagram</div>
           <span style="font-size:12px;color:var(--mid);">attributed via Instagram tracking link</span>
         </div>
         <div class="ig-stats-row">
           <div class="ig-stat">
-            <div class="isv">—</div>
+            <div class="isv">â</div>
             <div class="isl">Total Spend</div>
           </div>
           <div class="ig-stat">
-            <div class="isv">1</div>
-            <div class="isl">Reservation</div>
+            <div class="isv">—</div>
+            <div class="isl">Reservations</div>
           </div>
           <div class="ig-stat">
-            <div class="isv">2</div>
+            <div class="isv">—</div>
             <div class="isl">Covers</div>
           </div>
           <div class="ig-stat">
@@ -570,16 +570,16 @@
           <div class="ig-bar-track">
             <div class="ig-bar-fill" style="width:0%;background:var(--instagram);"></div>
           </div>
-          <div class="ig-bar-pct">—</div>
+          <div class="ig-bar-pct">â</div>
         </div>
-        <div class="rev-note">Revenue reflects bookings made directly through the Instagram booking link. The majority of Instagram-influenced reservations arrive via phone, walk-in, or direct web â and are not separately attributed in this report.</div>
+        <div class="rev-note">Revenue reflects bookings made directly through the Instagram booking link. The majority of Instagram-influenced reservations arrive via phone, walk-in, or direct web Ã¢ÂÂ and are not separately attributed in this report.</div>
       </div>
     </div>
   </div>
 
   <!-- Facebook Revenue -->
   <div class="revenue-card">
-    <h3>Facebook Attributed Revenue &nbsp;Â·&nbsp; via Facebook booking link</h3>
+    <h3>Facebook Attributed Revenue &nbsp;ÃÂ·&nbsp; via Facebook booking link</h3>
     <div class="rev-grid">
       <div class="rev-total" style="background:linear-gradient(135deg,#1254c0 0%,#1877F2 100%);">
         <div class="rtl">Total March Revenue</div>
@@ -588,7 +588,7 @@
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill pill-fb" style="margin:0;">â Facebook</div>
+          <div class="pill pill-fb" style="margin:0;">Ã¢ÂÂ Facebook</div>
           <span style="font-size:12px;color:var(--mid);">attributed via Facebook tracking link</span>
         </div>
         <div class="ig-stats-row">
@@ -616,16 +616,16 @@
           </div>
           <div class="ig-bar-pct">0%</div>
         </div>
-        <div class="rev-note">No bookings were tracked through the Facebook booking link this period. Facebook remains a secondary channel (105 followers) â revenue influence is primarily indirect.</div>
+        <div class="rev-note">No bookings were tracked through the Facebook booking link this period. Facebook remains a secondary channel (105 followers) Ã¢ÂÂ revenue influence is primarily indirect.</div>
       </div>
     </div>
   </div>
 
 </section>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
      DESIGN
-ââââââââââââââââââââââââââââââââââââââââ -->
+Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
 <section id="design" class="section">
 
   
@@ -634,25 +634,25 @@
     <div class="card">
       <div class="card-title">REPORTING PERIOD DESIGN HOURS</div>
       <div class="card-value">3h 45m</div>
-      <div class="card-sub">Reporting Period: March 2026 &nbsp;Â·&nbsp; 225 min tracked</div>
+      <div class="card-sub">Reporting Period: March 2026 &nbsp;ÃÂ·&nbsp; 225 min tracked</div>
     </div>
     <div class="card">
       <div class="card-title">Completed Deliverables</div>
       <div class="card-value">1</div>
-      <div class="card-sub">March 2026 Â· Design Requests</div>
+      <div class="card-sub">March 2026 ÃÂ· Design Requests</div>
     </div>
   </div>
 
   <div class="sh">
     <h2>Completed <span>Work</span></h2>
-    <span class="badge">March 2026 Â· Asana Design Tracker</span>
+    <span class="badge">March 2026 ÃÂ· Asana Design Tracker</span>
   </div>
 
   <!-- Deliverable -->
   
 
-  <div class="deliv"><div class="deliv-head"><div><div class="deliv-name">No design deliverables in March</div><div class="deliv-sec">Design Requests</div></div><div><div class="deliv-date">â</div><div></div></div></div><div class="deliv-tags"></div><div></div><div class="deliv-hrs"><span>â</span><div class="hrs-bar"><div class="hrs-fill" style="width:0%;"></div></div><span>â</span></div></div><div class="chart-card" style="margin-top:8px;">
-    <h3>Design Hours by Deliverable &nbsp;Â·&nbsp; March 2026</h3>
+  <div class="deliv"><div class="deliv-head"><div><div class="deliv-name">No design deliverables in March</div><div class="deliv-sec">Design Requests</div></div><div><div class="deliv-date">Ã¢ÂÂ</div><div></div></div></div><div class="deliv-tags"></div><div></div><div class="deliv-hrs"><span>Ã¢ÂÂ</span><div class="hrs-bar"><div class="hrs-fill" style="width:0%;"></div></div><span>Ã¢ÂÂ</span></div></div><div class="chart-card" style="margin-top:8px;">
+    <h3>Design Hours by Deliverable &nbsp;ÃÂ·&nbsp; March 2026</h3>
     <div class="chart-wrap"><canvas id="hoursChart"></canvas></div>
   </div>
 
@@ -683,13 +683,13 @@
     </div>
     <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--light);margin-top:2px;">
       <span>0h</span>
-      <span style="color:var(--blue);">5h 16m used &nbsp;Â·&nbsp; 14.6% of annual retainer</span>
+      <span style="color:var(--blue);">5h 16m used &nbsp;ÃÂ·&nbsp; 14.6% of annual retainer</span>
       <span>36h total</span>
     </div>
   </div>
 
   <div class="chart-card">
-    <h3>All Retainer Hours by Project &nbsp;Â·&nbsp; Year to Date</h3>
+    <h3>All Retainer Hours by Project &nbsp;ÃÂ·&nbsp; Year to Date</h3>
     <div class="chart-wrap"><canvas id="retainerChart"></canvas></div>
   </div>
 
@@ -698,7 +698,7 @@
 </main>
 
 <script>
-  /* âââ Navigation âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Navigation Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   function showSection(id, btn) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -706,18 +706,18 @@
     btn.classList.add('active');
   }
 
-  /* âââ Posts data (Q1 2026, Rella) âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Posts data (Q1 2026, Rella) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   /* imageUrl: paste the direct Instagram post image URL from Rella to enable thumbnails */
   /* postUrl:  paste the Instagram permalink (e.g. https://www.instagram.com/p/XXXXX/) to make card clickable */
   const postsData = [
-    {rank:1, platform:'Instagram', type:'CAROUSEL', caption:"Our Arancini allâAmatriciana. Crisp rice, pancetta, tomato passata, chilli, smoked scamorza. One bite and youâll get it.", views:'616', likes:13, comments:0, engagement:5.3, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/650869142_17995395641869308_5327568689835209873_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=aF2uKa4pFQEQ7kNvwHhD-HF&_nc_oc=AdqXfglK5yauNPx-vlPsqVUHgWFreHtrZpGKUQ96lIN_UFLf_luswndklQcubOxK0mI&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&oh=00_Af1o8uC448P7sJ48G-01hX8YxMV2Va3ukzxJCuxSDQhjyA&oe=69D2BAC0'},
-    {rank:2, platform:'Instagram', type:'REEL', caption:"Tutto, behind the bar ââ carefully crafted, one cocktail at a time.", views:'547', likes:14, comments:0, engagement:3.4, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.71878-15/654973909_1625219898722803_5364040117473117184_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mseHj0yBKYQQ7kNvwEQiVFY&_nc_oc=Adp1uo_-BC3yFFjjnAhO_K2iTBpM9SqheFYO0xAERokb1pkBfkxpmHtNqmuQ0tmTUdk&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&_nc_tpa=Q5bMBQGJgwvPAWNZoEYtUkX3nwTn-Sd_HRsY9VCNHLhWIjoGtSe59woy8ErKhsL5zj0z8esUEE9s9vT1gg&oh=00_Af0lGt1bAcvd1WeilsfpmlsNr4bXvyYAOXY0LEE5fHoN7Q&oe=69D2D167'},
+    {rank:1, platform:'Instagram', type:'CAROUSEL', caption:"Our Arancini allÃ¢ÂÂAmatriciana. Crisp rice, pancetta, tomato passata, chilli, smoked scamorza. One bite and youÃ¢ÂÂll get it.", views:'616', likes:13, comments:0, engagement:5.3, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/650869142_17995395641869308_5327568689835209873_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=aF2uKa4pFQEQ7kNvwHhD-HF&_nc_oc=AdqXfglK5yauNPx-vlPsqVUHgWFreHtrZpGKUQ96lIN_UFLf_luswndklQcubOxK0mI&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&oh=00_Af1o8uC448P7sJ48G-01hX8YxMV2Va3ukzxJCuxSDQhjyA&oe=69D2BAC0'},
+    {rank:2, platform:'Instagram', type:'REEL', caption:"Tutto, behind the bar Ã¢ÂÂÃ¢ÂÂ carefully crafted, one cocktail at a time.", views:'547', likes:14, comments:0, engagement:3.4, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.71878-15/654973909_1625219898722803_5364040117473117184_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mseHj0yBKYQQ7kNvwEQiVFY&_nc_oc=Adp1uo_-BC3yFFjjnAhO_K2iTBpM9SqheFYO0xAERokb1pkBfkxpmHtNqmuQ0tmTUdk&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&_nc_tpa=Q5bMBQGJgwvPAWNZoEYtUkX3nwTn-Sd_HRsY9VCNHLhWIjoGtSe59woy8ErKhsL5zj0z8esUEE9s9vT1gg&oh=00_Af0lGt1bAcvd1WeilsfpmlsNr4bXvyYAOXY0LEE5fHoN7Q&oe=69D2D167'},
     {rank:3, platform:'Instagram', type:'IMAGE', caption:"Some things just become Grande Speciale at Tutto. Come taste.", views:'542', likes:18, comments:1, engagement:6.3, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/657252221_17996673329869308_1898585155757650712_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=f3yyInteGRsQ7kNvwFXM4UP&_nc_oc=Adq3fjEmaNMicZB_GJYfl6kIRYLUXwv13x6oh_y2934rnsoSve0fuAkhuPiVOqBuoyo&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&oh=00_Af0V4pGABAwiCyayzy3y0G5GhIu7xxjAQkNnk17J7SxrEw&oe=69D2D2BB'},
     {rank:4, platform:'Instagram', type:'REEL', caption:"Our handmade pasta, fatta in casa. Fresh pasta from scratch, just the way we grew up with. Everyday Italian. Grande speciale.", views:'525', likes:12, comments:1, engagement:4.1, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/649967774_17995278830869308_2474775832621252478_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=IKiRoDGFetgQ7kNvwH_gX-I&_nc_oc=Adrf4QeCWP6vBiW05MURR6TXnlF3Bl60nmOEDK2xjV6qJztEneX4wPGqhzdOTL-tqtA&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&_nc_tpa=Q5bMBQHk1RIFGI1n_BRb7XwpLE8BtStsb0jiFDJFd0YyWB5HXcXhqBwqY4x3B7bB1pAQlti0hiuGwJGLmg&oh=00_Af2NKbbc7Gb1oaVdJhdlV55H4B4RbbD1F0DLGIR9wPS6mA&oe=69D2B370'},
-    {rank:5, platform:'Instagram', type:'CAROUSEL', caption:"TUTTO Carbonara's process.\nGuanciale, egg yolk, pecorino, black pepper.\nThatâs the whole story.", views:'507', likes:14, comments:0, engagement:5.9, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/658455579_17997659834869308_2207586781928862648_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-n7AYO8vq5cQ7kNvwEQxY8r&_nc_oc=Adpmp45Ibr2qG9ehtTiDBpos17wxPNy7AE7wQZ0q1y9A_o6VykvjOmPyYIXveYVeHk8&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&oh=00_Af2UojotJUh3s4hkJ-vjfDKR93tglDrftxfRV2PnYReh3w&oe=69D2C6D4'},
+    {rank:5, platform:'Instagram', type:'CAROUSEL', caption:"TUTTO Carbonara's process.\nGuanciale, egg yolk, pecorino, black pepper.\nThatÃ¢ÂÂs the whole story.", views:'507', likes:14, comments:0, engagement:5.9, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/658455579_17997659834869308_2207586781928862648_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-n7AYO8vq5cQ7kNvwEQxY8r&_nc_oc=Adpmp45Ibr2qG9ehtTiDBpos17wxPNy7AE7wQZ0q1y9A_o6VykvjOmPyYIXveYVeHk8&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&oh=00_Af2UojotJUh3s4hkJ-vjfDKR93tglDrftxfRV2PnYReh3w&oe=69D2C6D4'},
     {rank:6, platform:'Instagram', type:'IMAGE', caption:"Piatto di formaggio. \nLavosh, semi-dried muscatels grapes, Lenswood apple paste, roasted almonds.\nAll in one plate.", views:'497', likes:9, comments:0, engagement:2.9, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/656342674_17996929019869308_8901961668115415462_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=FF4qnb7oCi4Q7kNvwF9y5iY&_nc_oc=AdpzuVQys46KtGTKoAMRbXAbaegEX6p0pLB2QIRmy0yY24YZPxDP3HeUWOUrv8uHwFM&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&oh=00_Af1B6z8UrjWmxM-qQOayBFDijc0SksS7K0Z17Tx3SHPLwA&oe=69D2D19A'},
     {rank:7, platform:'Instagram', type:'REEL', caption:"This is TUTTO. Great food, made by hand, with flavour you can taste.", views:'475', likes:8, comments:0, engagement:6, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/654212123_17996385719869308_6784178003140009743_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9psflGB_3BQQ7kNvwH2zLfh&_nc_oc=AdoeOuvs5hHlfLxyDuw9hlJe-bZt6x8TUl53qB1w3C9taQ5YjYLSzJ_SD9HQm3QatLk&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&_nc_tpa=Q5bMBQHj4g8Zt6cT4c9bqItJr3TJrMErMHthEhw4u6yV73mVI5G20DDu5pnoCAEq_e55SrBeV_9e_K_EeA&oh=00_Af13urczESIp3cwOlHyqrc7Ni44fr9SwKqjTLlMiYXPGPw&oe=69D2C207'},
-    {rank:8, platform:'Instagram', type:'CAROUSEL', caption:"Express Lunch at TUTTO.\nMonday to Friday, 12â3pm.\nBook your table.", views:'441', likes:6, comments:0, engagement:3.3, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/657955061_17997413639869308_3276882011471162362_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0VClMABs-ZkQ7kNvwGZGk6m&_nc_oc=AdrZhKRlYHU4k_rOlJLWBiEAu41dkMYUj0H0aXJPuChobrFLcQEoz9dG_MfSaa9EysY&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&oh=00_Af0R6m3OT_uTFvI6LslGTWtQCYFYHpSWWjVxTg8xsqlIyA&oe=69D2DF6C'}
+    {rank:8, platform:'Instagram', type:'CAROUSEL', caption:"Express Lunch at TUTTO.\nMonday to Friday, 12Ã¢ÂÂ3pm.\nBook your table.", views:'441', likes:6, comments:0, engagement:3.3, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/657955061_17997413639869308_3276882011471162362_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0VClMABs-ZkQ7kNvwGZGk6m&_nc_oc=AdrZhKRlYHU4k_rOlJLWBiEAu41dkMYUj0H0aXJPuChobrFLcQEoz9dG_MfSaa9EysY&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=DFTLt7kfwVcUhFSjJzKwcw&oh=00_Af0R6m3OT_uTFvI6LslGTWtQCYFYHpSWWjVxTg8xsqlIyA&oe=69D2DF6C'}
   ]
 
   function fmt(n, metric) {
@@ -755,7 +755,7 @@
         : `<div class="post-thumb-fallback" style="background:${p.gradient};"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="rgba(255,255,255,0.55)"/></svg></div>`;
 
       const viewLinkHTML = p.postUrl
-        ? `<a class="post-view-link" href="${p.postUrl}" target="_blank" rel="noopener">View on Instagram â</a>`
+        ? `<a class="post-view-link" href="${p.postUrl}" target="_blank" rel="noopener">View on Instagram Ã¢ÂÂ</a>`
         : '';
 
       const card = document.createElement('div');
@@ -771,7 +771,7 @@
         <div class="post-body">
           <div class="post-rank-row">
             <span class="rank-badge${rank === 1 ? ' r1' : ''}">${rank}</span>
-            <span class="rank-platform">Instagram &nbsp;Â·&nbsp; ${p.type}</span>
+            <span class="rank-platform">Instagram &nbsp;ÃÂ·&nbsp; ${p.type}</span>
           </div>
           <div class="post-caption">${p.caption}</div>
           <div class="post-metrics">${metricsHTML}</div>
@@ -789,12 +789,12 @@
   function sortPosts(metric) { renderPosts(metric); }
   renderPosts('views');
 
-  /* âââ Chart palette âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Chart palette Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   const C = { blue: '#D4603C', light: '#E07E5A', sky: '#F5DDD4', green: '#3D8C5E' };
   Chart.defaults.font.family = 'Georgia, serif';
   Chart.defaults.color = '#6B6B6B';
 
-  /* âââ Email open rate chart âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Email open rate chart Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   new Chart(document.getElementById('emailChart'), {
     type: 'bar',
     data: {
@@ -829,7 +829,7 @@
     return h > 0 ? `${h}h ${m > 0 ? m + 'm' : ''}` : `${m}m`;
   };
 
-  /* âââ Design hours chart (March) âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Design hours chart (March) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   new Chart(document.getElementById('hoursChart'), {
     type: 'bar',
     data: {
@@ -854,7 +854,7 @@
     }
   });
 
-  /* âââ Annual retainer chart (all projects + remaining) âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Annual retainer chart (all projects + remaining) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   new Chart(document.getElementById('retainerChart'), {
     type: 'doughnut',
     data: {
