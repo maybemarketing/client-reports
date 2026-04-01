@@ -802,51 +802,14 @@
   /* imageUrl: paste the direct Instagram post image URL from Rella to enable thumbnails */
   /* postUrl:  paste the Instagram permalink (e.g. https://www.instagram.com/p/XXXXX/) to make card clickable */
   const postsData = [
-    {
-      type: 'Reel',
-      caption: 'Maybe you know what you want. Maybe you need a taste first. Mini sips to help you decide — our il conte sips are $8 all day at Allora.',
-      views: 13100, likes: 312, comments: 16, engagement: 4.8,
-      gradient: 'linear-gradient(145deg, #7A1414 0%, #A01E1E 55%, #C43030 100%)',
-      imageUrl: null, postUrl: null
-    },
-    {
-      type: 'Carousel',
-      caption: 'Aperitivi Moderni at Allora. Classic Italian aperitivo, Maybe-style. Meet the Americanello: campari, rosso vermouth, lemon, myrtle, mango soda. Your new pre-dinner ritual?',
-      views: 4900, likes: 140, comments: 13, engagement: 8.1,
-      gradient: 'linear-gradient(145deg, #A01E1E 0%, #C43030 60%, #F5D4D4 100%)',
-      imageUrl: null, postUrl: null
-    },
-    {
-      type: 'Carousel',
-      caption: 'Lunch Expresso (yes, we know – it’s a joke). Don\'t worry, we know the difference between espresso and expresso – and how to dish up a great lunch, fast. Si, according to @goodfoodau, it\'s a "lunch worth heading into the office for." $25 includes antipasto della casa (aka: on us) + chef Rosy\'s main del giorno. Thirsty? Aperitivo Hour conveniently overlaps...',
-      views: 1900, likes: 23, comments: 1, engagement: 3.3,
-      gradient: 'linear-gradient(145deg, #7A1414 0%, #A01E1E 100%)',
-      imageUrl: null, postUrl: null
-    },
-    {
-      type: 'Carousel',
-      caption: 'Buongiorno! Need a pick-me-up? Espresso Al Banco — a.k.a Espresso, the Italian way. $1.50 all day every day, taken standing at the bar.
-
-*For any other coffee, normal pricing. For espresso sitting down, normal prices.',
-      views: 1500, likes: 23, comments: 0, engagement: 4.1,
-      gradient: 'linear-gradient(145deg, #A01E1E 0%, #C43030 100%)',
-      imageUrl: null, postUrl: null
-    },
-    {
-      type: 'Carousel',
-      caption: 'Sometimes, you can\'t go past a good plate of pasta. Si? Swipe for two of our (and your) Allora faves.',
-      views: 1200, likes: 23, comments: 0, engagement: 4.8,
-      gradient: 'linear-gradient(145deg, #7A1414 0%, #A01E1E 55%, #C43030 100%)',
-      imageUrl: null, postUrl: null
-    },
-    {
-      type: 'Reel',
-      caption: 'Maybe you know what you want. Maybe you need a taste first. Mini sips to help you decide — our il conte sips are $8 all day at Allora.',
-      views: 244, likes: 0, comments: 0, engagement: 0.5,
-      gradient: 'linear-gradient(145deg, #A01E1E 0%, #C43030 60%, #F5D4D4 100%)',
-      imageUrl: null, postUrl: null
-    }
-  ];
+    {rank:1, platform:'Instagram', type:'REEL', caption:"Maybe you know what you want. Maybe you need a taste first. Mini sips to help you decide — our il conte sips are $8 all day at Allora.", views:'13.1K', likes:312, comments:16, engagement:4.8, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.71878-15/651891975_930202209396719_3389401980303855341_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=wN18TaIGaN0Q7kNvwFSlUJn&_nc_oc=AdrIA4aCkvJAeGPo-oNlgKNJtYTUlB--ZyT4O8JEEiHbmR9TOAeuOS7t15t34XSLOQI&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=7ozmlJloPLpw-HXlXtd4yA&_nc_tpa=Q5bMBQELW1Ukv4r8-k0TplStQ65crxtnNkiGg0SgYdaoD0EkPpbT3rRqnweVTJFt3K4uMgzwWhFGY5t28Q&oh=00_Af2uar-xMDHNMaFiMDPH46sozUMTU0KPISMDU7W_PRbFug&oe=69D2C26D'},
+    {rank:2, platform:'Instagram', type:'CAROUSEL', caption:"Aperitivi Moderni at Allora. Classic Italian aperitivo, Maybe-style. Meet the Americanello: campari, rosso vermouth, lemon, myrtle, mango soda. Your new pre-dinner ritual?", views:'4.9K', likes:140, comments:13, engagement:8, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/651027563_17945071587133677_9197771488245581596_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=zEA44DJrPvIQ7kNvwH93vJD&_nc_oc=AdpnVy7r6_L_pSCzePFruLTntDZ_8Gi2nsd1rqtZsgn9CGTM_UJ83ejIXcK2T7Yc5aw&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=7ozmlJloPLpw-HXlXtd4yA&oh=00_Af2jZ3-fUW7dQq-bsw4myW2JqLu75BkQP1wJF8_X8sm_cw&oe=69D2C95F'},
+    {rank:3, platform:'Instagram', type:'CAROUSEL', caption:"Lunch Expresso (yes, we know – it’s a joke). Don't worry, we know the difference between espresso and expresso – and how to dish up a great lunch, fast. Si, according to @goodfoodau, it's a \"lunch worth heading into the office for.\" $25 includes antipasto della casa (aka: on us) + chef Rosy's main del giorno. Thirsty? Aperitivo Hour conveniently overlaps...", views:'1.9K', likes:23, comments:1, engagement:3.2, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/656075719_17946933174133677_6193518906985678468_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=vYmFDWwt7pEQ7kNvwEwQyjE&_nc_oc=AdqY1EnLOPq05j57ybRH9I87h7-SCoGYt8BwB5ll58B4gue71Re6Dczs3W-jb9aV2JI&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=7ozmlJloPLpw-HXlXtd4yA&oh=00_Af14jaQAt13nhP6CJdTP7cxtVt6kihQ1Zt7KYPu_xtdRsA&oe=69D2D2FB'},
+    {rank:4, platform:'Instagram', type:'CAROUSEL', caption:"Buongiorno! Need a pick-me-up? Espresso Al Banco — a.k.a Espresso, the Italian way. $1.50 all day every day, taken standing at the bar.\n\n*For any other coffee, normal pricing. For espresso sitting down, normal prices.", views:'1.6K', likes:24, comments:0, engagement:4.2, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/656736513_17947099563133677_891144696528407586_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=1UIs_-7lOMgQ7kNvwHI5LtK&_nc_oc=AdqJS3uHa5d2o0FI4wawNZmxYCU_3ZpAhy6sJLZWfqsfiaMm_eoKtMBheea-zYxMIvA&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=7ozmlJloPLpw-HXlXtd4yA&oh=00_Af1FKYvgE7Gwx69zDm7vDxIx-EkscQSVocSWIuNtqEdtVw&oe=69D2D17D'},
+    {rank:5, platform:'Instagram', type:'CAROUSEL', caption:"Sometimes, you can't go past a good plate of pasta. Si? Swipe for two of our (and your) Allora faves.", views:'1.3K', likes:24, comments:0, engagement:4.8, imageUrl: 'https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/656313739_17946687759133677_8323770691905577521_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=MsguOANmcqgQ7kNvwETQFDw&_nc_oc=AdoNrjDOkoLFmWSLi6Lp8XIaoMjcEMXqH5M14MH68AS3XmSVB3aU3it6EhyIk_dYKwk&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=7ozmlJloPLpw-HXlXtd4yA&oh=00_Af3oFzFoiLC9lPAZPsvEayA4YnUoAAiXvmSAi-4aXrzUAQ&oe=69D2DD6E'},
+    {rank:6, platform:'Instagram', type:'IMAGE', caption:"Allora! Take note of our long weekend hours ❤️👀", views:'656', likes:13, comments:2, engagement:4.4, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/657231461_17947923420133677_5008115895659270337_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Qg8Dm6gPqzEQ7kNvwEb7rkd&_nc_oc=Ado8RXZBBZ6-f0qo--iYLlQD5rAIgEVJB7NkM_K05oar3ETh4Ctfh6imNzqVJ-6Y4BI&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=7ozmlJloPLpw-HXlXtd4yA&oh=00_Af2glUPAoSSU4KBLU6N02qmU14w-HnkYHDpcXCpgDfaI2w&oe=69D2CBC6'},
+    {rank:7, platform:'Facebook', type:'REEL', caption:"Maybe you know what you want. Maybe you need a taste first. Mini sips to help you decide — our il conte sips are $8 all day at Allora.", views:'247', likes:0, comments:0, engagement:0.5, imageUrl: 'https://scontent-iad6-1.xx.fbcdn.net/v/t51.71878-10/651891975_930202209396719_3389401980303855341_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=wN18TaIGaN0Q7kNvwFSlUJn&_nc_oc=AdrIA4aCkvJAeGPo-oNlgKNJtYTUlB--ZyT4O8JEEiHbmR9TOAeuOS7t15t34XSLOQI&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ZxLWMmI14bjQcbBaozfGXA&_nc_tpa=Q5bMBQHmUOZKXTFpU_bKsggbEiaiXHYvvfQ8zLLd2jqywrJLGosWld5oIk6HSvGdpXm-JJ-yt-Qb8GkNeg&oh=00_Af3Efwcd4VviCgF1YkG9_Mit2UtsEsZ9S3DesU8j8AUYbg&oe=69D2BAE9'}
+  ]
 
   function fmt(n, metric) {
     if (metric === 'engagement') return n.toFixed(1) + '%';
