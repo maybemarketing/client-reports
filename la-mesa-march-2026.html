@@ -710,53 +710,13 @@
   /* imageUrl: paste the direct Instagram post image URL from Rella to enable thumbnails */
   /* postUrl:  paste the Instagram permalink (e.g. https://www.instagram.com/p/XXXXX/) to make card clickable */
   const postsData = [
-    {
-      type: 'Carousel',
-      caption: 'Where Palm Cove gathers. The Coral Sea out front, citrus and chilli on our table, and plates that makes sense this close to the water. Welcome to La Mesa.',
-      views: 277, likes: 11, comments: 0, engagement: 9.6,
-      gradient: 'linear-gradient(145deg, #000A30 0%, #00134A 55%, #001E6E 100%)',
-      imageUrl: null, postUrl: null
-    },
-    {
-      type: 'Carousel',
-      caption: 'At the centre of La Mesa stands a paperbark tree — Melaleuca — native to this part of the coast, its scent carried easily on warm air. 
-
-It’s from this very tree that the bark is taken to smoke our Black Angus picaña.
-
-Used fresh, it gives a distinctive, aromatic smoke that carries through the cooking — a detail that’s specific to La Mesa, and can’t quite be recreated anywhere else.',
-      views: 190, likes: 6, comments: 0, engagement: 8.2,
-      gradient: 'linear-gradient(145deg, #00134A 0%, #001E6E 60%, #C8D0E8 100%)',
-      imageUrl: null, postUrl: null
-    },
-    {
-      type: 'Carousel',
-      caption: 'Our guests say it best — something for everyone on the table, and everything better shared.',
-      views: 155, likes: 6, comments: 0, engagement: 9.5,
-      gradient: 'linear-gradient(145deg, #000A30 0%, #00134A 100%)',
-      imageUrl: null, postUrl: null
-    },
-    {
-      type: 'Image',
-      caption: 'Solo, couple, or group – you\'re always welcome at our table.',
-      views: 153, likes: 8, comments: 0, engagement: 11.1,
-      gradient: 'linear-gradient(145deg, #00134A 0%, #001E6E 100%)',
-      imageUrl: null, postUrl: null
-    },
-    {
-      type: 'Image',
-      caption: 'Made for sharing, made for Palm Cove. Tropical produce, reef seafood and a menu that opens up the moment it hits the table. Welcome to La Mesa.',
-      views: 146, likes: 9, comments: 0, engagement: 13.4,
-      gradient: 'linear-gradient(145deg, #000A30 0%, #00134A 55%, #001E6E 100%)',
-      imageUrl: null, postUrl: null
-    },
-    {
-      type: 'Carousel',
-      caption: 'La Mesa. Margaritas on the table, salt in the air, and a little bit of Mexico right in the heart of Palm Cove.',
-      views: 120, likes: 7, comments: 0, engagement: 14.3,
-      gradient: 'linear-gradient(145deg, #00134A 0%, #001E6E 60%, #C8D0E8 100%)',
-      imageUrl: null, postUrl: null
-    }
-  ];
+    {rank:1, platform:'Instagram', type:'CAROUSEL', caption:"Where Palm Cove gathers. The Coral Sea out front, citrus and chilli on our table, and plates that makes sense this close to the water. Welcome to La Mesa.", views:'278', likes:11, comments:0, engagement:9.6, imageUrl: 'https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/658321930_18402548764195885_7294955350380904697_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bjMncsXbHyYQ7kNvwHV54qG&_nc_oc=Adp4lImhvx69TWjDgk18tzLd5x3UQKDd1lS2TDgPyWwNMJeqwnPTPwC_pQ9muv6IzjE&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=RNdpDvy2Gi-0gaf-rpqeNA&oh=00_Af2xDoG8kHzA00PfnbAuStceTdwhn8usi7H8PmH94FBlzw&oe=69D2C97A'},
+    {rank:2, platform:'Instagram', type:'CAROUSEL', caption:"At the centre of La Mesa stands a paperbark tree — Melaleuca — native to this part of the coast, its scent carried easily on warm air. \n\nIt’s from this very tree that the bark is taken to smoke our Black Angus picaña.\n\nUsed fresh, it gives a distinctive, aromatic smoke that carries through the cooking — a detail that’s specific to La Mesa, and can’t quite be recreated anywhere else.", views:'191', likes:6, comments:0, engagement:8.1, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/657330205_18402549253195885_2688406937240744331_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=EGCaJpYBX9oQ7kNvwGor-uB&_nc_oc=Adp1CI54RIxWV4YyB-iivWOLizuHB1tdlzVQJhweZWUy8IMpQoi3jUXKa9u6uPkcar8&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=RNdpDvy2Gi-0gaf-rpqeNA&oh=00_Af1Hfe0VwZ0nDWCN0OIROEWaryBorhdpeA2qw2xkTedHUQ&oe=69D2CDB0'},
+    {rank:3, platform:'Instagram', type:'CAROUSEL', caption:"Our guests say it best — something for everyone on the table, and everything better shared.", views:'156', likes:6, comments:0, engagement:9.4, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/657402703_18402834853195885_8640739231854133796_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=kImnE875wnoQ7kNvwHXlXjx&_nc_oc=AdpNCedh3TaiPQz3jp81UHuvS_ViZpvI0b7iT_vR4QO9LgGkhm3FIXJwL2_gM5kF6wQ&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=RNdpDvy2Gi-0gaf-rpqeNA&oh=00_Af0Bzc7wjNZvUTakXOiEwRY0M9UeoLWcRCQkdFmXVe3pEg&oe=69D2C421'},
+    {rank:4, platform:'Instagram', type:'IMAGE', caption:"Solo, couple, or group – you're always welcome at our table.", views:'154', likes:8, comments:0, engagement:11, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/658986749_18402687928195885_4115615960699677034_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=KQAIMpMB_0oQ7kNvwEYNntw&_nc_oc=AdqrSJFWpGXd6z4TZqdglARjcl8AxGSQWTA0pzTRZnMB2wolqQb7UinvkQimf8aRdi0&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=RNdpDvy2Gi-0gaf-rpqeNA&oh=00_Af3ZypukHYpzeWyUzOxoMmsVhVX2N635hvLTiQoyMB2u1Q&oe=69D2C560'},
+    {rank:5, platform:'Instagram', type:'IMAGE', caption:"Made for sharing, made for Palm Cove. Tropical produce, reef seafood and a menu that opens up the moment it hits the table. Welcome to La Mesa.", views:'146', likes:9, comments:0, engagement:13.4, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/656722915_18402549625195885_904081216335473145_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=6WuC2R_aed8Q7kNvwGAqK8a&_nc_oc=Adp0PxTFdAFh9YUeOmNPzmfBESXz7tlyeAs3cJcLmsCAtKfShdmtfMsLNfq9YVXGvQ4&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=RNdpDvy2Gi-0gaf-rpqeNA&oh=00_Af3tcL_G-yXiy7vLRK0Af_VT0sdvaMX2N62jo7rvcs_Pvw&oe=69D2BE9B'},
+    {rank:6, platform:'Instagram', type:'CAROUSEL', caption:"La Mesa. Margaritas on the table, salt in the air, and a little bit of Mexico right in the heart of Palm Cove.", views:'123', likes:8, comments:0, engagement:16, imageUrl: 'https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/658227151_18402993088195885_6359966091531754345_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yDHR-zfneaYQ7kNvwEzK7Md&_nc_oc=Adr1dVMKqXtAb0BDfGfoK1pR-qjaKu7n9EBHUVSh461BSIO0Tyx8uTA3wtDQxJAUhss&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=RNdpDvy2Gi-0gaf-rpqeNA&oh=00_Af3DG-a6LYG14JC5gtNd4xN-wAfPUeWwVStOJptDcteobA&oe=69D2B79A'}
+  ]
 
   function fmt(n, metric) {
     if (metric === 'engagement') return n.toFixed(1) + '%';
