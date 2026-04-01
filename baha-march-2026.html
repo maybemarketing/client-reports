@@ -2,7 +2,7 @@
 <html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baha â March 2026 Marketing Report</title>
+  <title>Baha Ã¢ÂÂ March 2026 Marketing Report</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
   <style>
     :root {
@@ -30,7 +30,7 @@
       min-height: 100vh;
     }
 
-    /* ââ NAV ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ NAV Ã¢ÂÂÃ¢ÂÂ */
     nav {
       background: var(--blue);
       padding: 0 40px;
@@ -62,7 +62,7 @@
     .tab.active { color: var(--white); background: var(--blue-dark); }
     .period { color: rgba(255,255,255,0.45); font-size: 12px; }
 
-    /* ââ HERO ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ HERO Ã¢ÂÂÃ¢ÂÂ */
     .hero {
       background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 65%, var(--blue-light) 100%);
       color: var(--white);
@@ -73,12 +73,12 @@
     .hero h1 em { color: rgba(255,255,255,0.65); font-style: normal; }
     .hero p { color: rgba(255,255,255,0.5); font-size: 13px; letter-spacing: 0.5px; margin-bottom: 0; }
 
-    /* ââ LAYOUT ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ LAYOUT Ã¢ÂÂÃ¢ÂÂ */
     main { max-width: 1100px; margin: 0 auto; padding: 32px 40px 60px; }
     .section { display: none; }
     .section.active { display: block; }
 
-    /* ââ SECTION HEADER ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ SECTION HEADER Ã¢ÂÂÃ¢ÂÂ */
     .sh {
       margin-bottom: 24px;
       padding-bottom: 14px;
@@ -98,12 +98,12 @@
       letter-spacing: 0.4px;
     }
 
-    /* ââ GRIDS ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ GRIDS Ã¢ÂÂÃ¢ÂÂ */
     .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
     .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
     .g4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 20px; }
 
-    /* ââ BASE CARD ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ BASE CARD Ã¢ÂÂÃ¢ÂÂ */
     .card {
       background: var(--white);
       border-radius: 10px;
@@ -116,12 +116,12 @@
     .card-sub { font-size: 12px; color: var(--mid); }
     .card-grow { font-size: 13px; color: var(--green); margin-top: 4px; }
 
-    /* ââ PLATFORM PILL ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ PLATFORM PILL Ã¢ÂÂÃ¢ÂÂ */
     .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
     .pill-ig { background: rgba(225,48,108,0.1); color: var(--instagram); }
     .pill-fb { background: rgba(24,119,242,0.1); color: var(--facebook); }
 
-    /* ââ CHART CARD ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ CHART CARD Ã¢ÂÂÃ¢ÂÂ */
     .chart-card {
       background: var(--white);
       border-radius: 10px;
@@ -133,7 +133,7 @@
     .chart-card h3 { font-size: 13px; font-weight: normal; color: var(--mid); letter-spacing: 0.5px; margin-bottom: 16px; }
     .chart-wrap { position: relative; height: 220px; }
 
-    /* ââ REVENUE SECTION ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ REVENUE SECTION Ã¢ÂÂÃ¢ÂÂ */
     .revenue-card {
       background: var(--white);
       border-radius: 10px;
@@ -186,7 +186,7 @@
     .ig-bar-pct { font-size: 12px; color: var(--mid); width: 44px; text-align: right; }
     .rev-note { font-size: 12.5px; color: var(--dark); line-height: 1.6; background: rgba(83,108,182,0.07); border-left: 3px solid var(--blue); border-radius: 0 8px 8px 0; padding: 13px 16px; margin-top: 16px; font-style: normal; }
 
-    /* ââ POSTS CONTROLS ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ POSTS CONTROLS Ã¢ÂÂÃ¢ÂÂ */
     .posts-head {
       display: flex;
       align-items: center;
@@ -218,7 +218,7 @@
     }
     .metric-select:focus { border-color: var(--blue); }
 
-    /* ââ POST CARDS ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ POST CARDS Ã¢ÂÂÃ¢ÂÂ */
     .posts-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-bottom: 8px; }
     .post-card {
       background: var(--white);
@@ -283,7 +283,7 @@
     .post-view-link:hover { text-decoration: underline; }
     .post-view-pending { font-size: 11px; color: var(--light); letter-spacing: 0.3px; font-style: italic; }
 
-    /* ââ EMAIL ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ EMAIL Ã¢ÂÂÃ¢ÂÂ */
     .email-ov { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 20px; }
     .camp-list { margin-bottom: 20px; }
     .camp-item {
@@ -308,7 +308,7 @@
     .s-sched { background: rgba(83,108,182,0.13); color: var(--blue); }
     .s-draft { background: var(--sky); color: var(--mid); }
 
-    /* ââ DESIGN ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ DESIGN Ã¢ÂÂÃ¢ÂÂ */
     .deliv {
       background: var(--white);
       border-radius: 10px;
@@ -327,7 +327,7 @@
     .hrs-bar { flex: 1; height: 4px; background: var(--sky); border-radius: 2px; overflow: hidden; }
     .hrs-fill { height: 100%; background: var(--blue); border-radius: 2px; }
 
-    /* ââ POST THUMB ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ POST THUMB Ã¢ÂÂÃ¢ÂÂ */
     .post-thumb {
       aspect-ratio: 4/5;
       overflow: hidden;
@@ -349,11 +349,11 @@
       justify-content: center;
     }
 
-    /* ââ RETAINER BAR ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ RETAINER BAR Ã¢ÂÂÃ¢ÂÂ */
     .ret-bar-track { height: 18px; background: var(--sky); border-radius: 9px; overflow: hidden; margin: 12px 0 6px; }
     .ret-bar-fill { height: 100%; border-radius: 9px; background: linear-gradient(90deg, var(--blue-dark), var(--blue)); transition: width 1s ease; }
 
-    /* ââ NOTE ââ */
+    /* Ã¢ÂÂÃ¢ÂÂ NOTE Ã¢ÂÂÃ¢ÂÂ */
     .note { font-size: 12px; color: var(--mid); background: var(--sky); padding: 10px 16px; border-radius: 8px; margin-bottom: 20px; line-height: 1.55; }
     .note strong { color: var(--charcoal); }
 
@@ -429,33 +429,33 @@
 
 <!-- NAV -->
 <nav>
-  <div class="brand">Baha <span>Â·</span> March 2026</div>
+  <div class="brand">Baha <span>ÃÂ·</span> March 2026</div>
   <div class="tabs">
     <button class="tab active" onclick="showSection('social', this)">Social Media</button>
     <button class="tab" onclick="showSection('email', this)">Email</button>
     <button class="tab" onclick="showSection('design', this)">Design</button>
   </div>
-  <div class="period">Mar 1 â Mar 31, 2026</div>
+  <div class="period">Mar 1 Ã¢ÂÂ Mar 31, 2026</div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-inner">
     <h1>Baha <em>Marketing Report</em></h1>
-    <p>March 2026 &nbsp;Â·&nbsp; Mar 1 â Mar 31 &nbsp;Â·&nbsp; Sydney</p>
+    <p>March 2026 &nbsp;ÃÂ·&nbsp; Mar 1 Ã¢ÂÂ Mar 31 &nbsp;ÃÂ·&nbsp; Sydney</p>
   </div>
 </div>
 
 <main>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
      SOCIAL MEDIA
-ââââââââââââââââââââââââââââââââââââââââ -->
+Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
 <section id="social" class="section active">
 
   <div class="sh">
     <h2>Social Media <span>Performance</span></h2>
-    <span class="badge">Mar 1 â Mar 30, 2026 Â· Rella</span>
+    <span class="badge">Mar 1 Ã¢ÂÂ Mar 30, 2026 ÃÂ· Rella</span>
   </div>
 
   <!-- Overview KPIs -->
@@ -491,28 +491,28 @@
   <!-- Platform breakdown -->
   <div class="g2">
     <div class="card">
-      <div class="pill pill-ig">â Instagram</div>
+      <div class="pill pill-ig">Ã¢ÂÂ Instagram</div>
       <div class="plat-grid">
         <div><div style="font-size:21px;">0</div><div class="card-sub">Interactions</div></div>
         <div><div style="font-size:21px;">0.0%</div><div class="card-sub">Engagement</div></div>
         <div><div style="font-size:21px;">0</div><div class="card-sub">Reach</div></div>
         <div><div style="font-size:21px;color:var(--green);">+0</div><div class="card-sub">Growth</div></div>
       </div>
-      <div style="margin-top:12px;font-size:11px;color:var(--light);">0 total followers Â· primary channel</div>
+      <div style="margin-top:12px;font-size:11px;color:var(--light);">0 total followers ÃÂ· primary channel</div>
     </div>
     <div class="card">
-      <div class="pill pill-fb">â Facebook</div>
+      <div class="pill pill-fb">Ã¢ÂÂ Facebook</div>
       <div class="plat-grid">
         <div><div style="font-size:21px;">0</div><div class="card-sub">Interactions</div></div>
         <div><div style="font-size:21px;">0.0%</div><div class="card-sub">Engagement</div></div>
         <div><div style="font-size:21px;">27</div><div class="card-sub">Reach</div></div>
         <div><div style="font-size:21px;color:var(--green);">+3</div><div class="card-sub">Growth</div></div>
       </div>
-      <div style="margin-top:12px;font-size:11px;color:var(--light);">388 total followers Â· secondary channel</div>
+      <div style="margin-top:12px;font-size:11px;color:var(--light);">388 total followers ÃÂ· secondary channel</div>
     </div>
   </div>
 
-  <!-- Top Posts â Sortable -->
+  <!-- Top Posts Ã¢ÂÂ Sortable -->
   <div class="posts-head">
     <h2>Top Performing <span>Posts</span></h2>
     <div class="sort-wrap">
@@ -530,12 +530,12 @@
   <!-- Attributed Revenue -->
   <div class="sh" style="margin-top:28px;">
     <h2>Attributed <span>Revenue</span></h2>
-    <span class="badge">Sevenrooms Â· Mar 1 â Mar 31, 2026</span>
+    <span class="badge">Sevenrooms ÃÂ· Mar 1 Ã¢ÂÂ Mar 31, 2026</span>
   </div>
 
   <!-- Instagram Revenue -->
   <div class="revenue-card">
-    <h3>Instagram Attributed Revenue &nbsp;Â·&nbsp; via Instagram booking link</h3>
+    <h3>Instagram Attributed Revenue &nbsp;ÃÂ·&nbsp; via Instagram booking link</h3>
     <div class="rev-grid">
       <div class="rev-total">
         <div class="rtl">Total March Revenue</div>
@@ -544,7 +544,7 @@
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill pill-ig" style="margin:0;">â Instagram</div>
+          <div class="pill pill-ig" style="margin:0;">Ã¢ÂÂ Instagram</div>
           <span style="font-size:12px;color:var(--mid);">attributed via Instagram tracking link</span>
         </div>
         <div class="ig-stats-row">
@@ -553,11 +553,11 @@
             <div class="isl">Total Spend</div>
           </div>
           <div class="ig-stat">
-            <div class="isv">1</div>
-            <div class="isl">Reservation</div>
+            <div class="isv">0</div>
+            <div class="isl">Reservations</div>
           </div>
           <div class="ig-stat">
-            <div class="isv">2</div>
+            <div class="isv">0</div>
             <div class="isl">Covers</div>
           </div>
           <div class="ig-stat">
@@ -572,14 +572,14 @@
           </div>
           <div class="ig-bar-pct">0%</div>
         </div>
-        <div class="rev-note">Revenue reflects bookings made directly through the Instagram booking link. The majority of Instagram-influenced reservations arrive via phone, walk-in, or direct web â and are not separately attributed in this report.</div>
+        <div class="rev-note">Revenue reflects bookings made directly through the Instagram booking link. The majority of Instagram-influenced reservations arrive via phone, walk-in, or direct web Ã¢ÂÂ and are not separately attributed in this report.</div>
       </div>
     </div>
   </div>
 
   <!-- Facebook Revenue -->
   <div class="revenue-card">
-    <h3>Facebook Attributed Revenue &nbsp;Â·&nbsp; via Facebook booking link</h3>
+    <h3>Facebook Attributed Revenue &nbsp;ÃÂ·&nbsp; via Facebook booking link</h3>
     <div class="rev-grid">
       <div class="rev-total" style="background:linear-gradient(135deg,#1254c0 0%,#1877F2 100%);">
         <div class="rtl">Total March Revenue</div>
@@ -588,7 +588,7 @@
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill pill-fb" style="margin:0;">â Facebook</div>
+          <div class="pill pill-fb" style="margin:0;">Ã¢ÂÂ Facebook</div>
           <span style="font-size:12px;color:var(--mid);">attributed via Facebook tracking link</span>
         </div>
         <div class="ig-stats-row">
@@ -616,21 +616,21 @@
           </div>
           <div class="ig-bar-pct">0%</div>
         </div>
-        <div class="rev-note">No bookings were tracked through the Facebook booking link this period. Facebook remains a secondary channel (105 followers) â revenue influence is primarily indirect.</div>
+        <div class="rev-note">No bookings were tracked through the Facebook booking link this period. Facebook remains a secondary channel (105 followers) Ã¢ÂÂ revenue influence is primarily indirect.</div>
       </div>
     </div>
   </div>
 
 </section>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
      EMAIL
-ââââââââââââââââââââââââââââââââââââââââ -->
+Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
 <section id="email" class="section">
 
   <div class="sh">
     <h2>Email Marketing <span>Performance</span></h2>
-    <span class="badge">March 2026 Â· Sevenrooms</span>
+    <span class="badge">March 2026 ÃÂ· Sevenrooms</span>
   </div>
 
   <div class="email-ov">
@@ -642,7 +642,7 @@
     <div class="card">
       <div class="card-title">Avg Open Rate</div>
       <div class="card-value">45%</div>
-      <div class="card-sub">Industry avg ~20â25%</div>
+      <div class="card-sub">Industry avg ~20Ã¢ÂÂ25%</div>
     </div>
     <div class="card">
       <div class="card-title">Avg Click Rate</div>
@@ -652,22 +652,22 @@
     <div class="card">
       <div class="card-title">Attributed Revenue</div>
       <div class="card-value">A$0</div>
-      <div class="card-sub">0 reservations Â· 0 covers</div>
+      <div class="card-sub">0 reservations ÃÂ· 0 covers</div>
     </div>
   </div>
 
   <!-- Email Revenue -->
   <div class="revenue-card">
-    <h3>Email Attributed Revenue &nbsp;Â·&nbsp; Sevenrooms Booked By Report &nbsp;Â·&nbsp; March 2026</h3>
+    <h3>Email Attributed Revenue &nbsp;ÃÂ·&nbsp; Sevenrooms Booked By Report &nbsp;ÃÂ·&nbsp; March 2026</h3>
     <div class="rev-grid">
       <div class="rev-total">
         <div class="rtl">Total March Revenue</div>
-        <div class="rtv">â</div>
+        <div class="rtv">Ã¢ÂÂ</div>
         <div class="rts">All booking channels combined</div>
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill" style="margin:0;background:rgba(83,108,182,0.12);color:var(--blue);">â Email</div>
+          <div class="pill" style="margin:0;background:rgba(83,108,182,0.12);color:var(--blue);">Ã¢ÂÂ Email</div>
           <span style="font-size:12px;color:var(--mid);">attributed via EDM tracking links</span>
         </div>
         <div class="ig-stats-row">
@@ -705,7 +705,7 @@
     <span class="badge">1 sent</span>
   </div>
 
-  <div class="camp-list"><div class="camp-item"><div><div><div class="camp-name">Balmy Nights SOLUS EDM</div><span class="sbadge s-sent">Sent</span></div><div class="camp-meta">Sent Tue 24 Mar 2026 Â· to Marketing Opt-Ins</div></div><div class="camp-stats"><div class="cs"><div class="v">1,971</div><div class="l">Recipients</div></div><div class="cs"><div class="v">48%</div><div class="l">Open Rate</div></div><div class="cs"><div class="v">10%</div><div class="l">Click Rate</div></div><div class="cs"><div class="v">194</div><div class="l">Clicks</div></div></div></div></div>
+  <div class="camp-list"><div class="camp-item"><div><div><div class="camp-name">Balmy Nights SOLUS EDM</div><span class="sbadge s-sent">Sent</span></div><div class="camp-meta">Sent Tue 24 Mar 2026 ÃÂ· to Marketing Opt-Ins</div></div><div class="camp-stats"><div class="cs"><div class="v">1,971</div><div class="l">Recipients</div></div><div class="cs"><div class="v">48%</div><div class="l">Open Rate</div></div><div class="cs"><div class="v">10%</div><div class="l">Click Rate</div></div><div class="cs"><div class="v">194</div><div class="l">Clicks</div></div></div></div></div>
 
   <div class="chart-card">
     <h3>Campaign Open Rate Comparison</h3>
@@ -715,9 +715,9 @@
 
 </section>
 
-<!-- âââââââââââââââââââââââââââââââââââââââ
+<!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
      DESIGN
-ââââââââââââââââââââââââââââââââââââââââ -->
+Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
 <section id="design" class="section">
 
   
@@ -726,25 +726,25 @@
     <div class="card">
       <div class="card-title">REPORTING PERIOD DESIGN HOURS</div>
       <div class="card-value">3h 45m</div>
-      <div class="card-sub">Reporting Period: March 2026 &nbsp;Â·&nbsp; 225 min tracked</div>
+      <div class="card-sub">Reporting Period: March 2026 &nbsp;ÃÂ·&nbsp; 225 min tracked</div>
     </div>
     <div class="card">
       <div class="card-title">Completed Deliverables</div>
       <div class="card-value">1</div>
-      <div class="card-sub">March 2026 Â· Design Requests</div>
+      <div class="card-sub">March 2026 ÃÂ· Design Requests</div>
     </div>
   </div>
 
   <div class="sh">
     <h2>Completed <span>Work</span></h2>
-    <span class="badge">March 2026 Â· Asana Design Tracker</span>
+    <span class="badge">March 2026 ÃÂ· Asana Design Tracker</span>
   </div>
 
   <!-- Deliverable -->
   
 
-  <div class="deliv"><div class="deliv-head"><div><div class="deliv-name">No design deliverables in March</div><div class="deliv-sec">Design Requests</div></div><div><div class="deliv-date">â</div><div></div></div></div><div class="deliv-tags"></div><div></div><div class="deliv-hrs"><span>â</span><div class="hrs-bar"><div class="hrs-fill" style="width:0%;"></div></div><span>â</span></div></div><div class="chart-card" style="margin-top:8px;">
-    <h3>Design Hours by Deliverable &nbsp;Â·&nbsp; March 2026</h3>
+  <div class="deliv"><div class="deliv-head"><div><div class="deliv-name">No design deliverables in March</div><div class="deliv-sec">Design Requests</div></div><div><div class="deliv-date">Ã¢ÂÂ</div><div></div></div></div><div class="deliv-tags"></div><div></div><div class="deliv-hrs"><span>Ã¢ÂÂ</span><div class="hrs-bar"><div class="hrs-fill" style="width:0%;"></div></div><span>Ã¢ÂÂ</span></div></div><div class="chart-card" style="margin-top:8px;">
+    <h3>Design Hours by Deliverable &nbsp;ÃÂ·&nbsp; March 2026</h3>
     <div class="chart-wrap"><canvas id="hoursChart"></canvas></div>
   </div>
 
@@ -775,13 +775,13 @@
     </div>
     <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--light);margin-top:2px;">
       <span>0h</span>
-      <span style="color:var(--blue);">5h 16m used &nbsp;Â·&nbsp; 14.6% of annual retainer</span>
+      <span style="color:var(--blue);">5h 16m used &nbsp;ÃÂ·&nbsp; 14.6% of annual retainer</span>
       <span>36h total</span>
     </div>
   </div>
 
   <div class="chart-card">
-    <h3>All Retainer Hours by Project &nbsp;Â·&nbsp; Year to Date</h3>
+    <h3>All Retainer Hours by Project &nbsp;ÃÂ·&nbsp; Year to Date</h3>
     <div class="chart-wrap"><canvas id="retainerChart"></canvas></div>
   </div>
 
@@ -790,7 +790,7 @@
 </main>
 
 <script>
-  /* âââ Navigation âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Navigation Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   function showSection(id, btn) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -798,18 +798,18 @@
     btn.classList.add('active');
   }
 
-  /* âââ Posts data (Q1 2026, Rella) âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Posts data (Q1 2026, Rella) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   /* imageUrl: paste the direct Instagram post image URL from Rella to enable thumbnails */
   /* postUrl:  paste the Instagram permalink (e.g. https://www.instagram.com/p/XXXXX/) to make card clickable */
   const postsData = [
     {rank:1, platform:'Instagram', type:'IMAGE', caption:"Ceviche, the small plate that sets the table at BAHA.\nCome taste it today.", views:'658', likes:7, comments:0, engagement:2, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/655695311_18124541164601318_8905372051624471672_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=1TYUcU9d4IMQ7kNvwH-qxzW&_nc_oc=Adp4H8TLsZBIKi3ndcbvs4a5HVFRfVK6KnrRtYLXzQf2LzKL6aK-iL8xjFSUIHKQEpw&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af1wech95pNwJ9by4EqHMtkmMZ9hwx8ZRkBKRJmL8x_Edg&oe=69D2C530'},
-    {rank:2, platform:'Instagram', type:'CAROUSEL', caption:"Balmy Nights, the BAHA way.\nPick your fillings, pass them around the table and add a frozen daiquiri while youâre at it.\nWalk in or reserve.", views:'526', likes:6, comments:0, engagement:4.7, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/656735529_18125147980601318_6191985054698312114_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=F1P_jtyKWn0Q7kNvwGDBbXG&_nc_oc=AdrQQsRrBV7gS361rDc8EYWRZqtvGUFAIhaftOzJeE9VPCm2xINOSPYpQqgZtI5jrIU&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af2Mlk5TR-fNtiAGrcQQj-av-vwHkyWxdeThfTLeJLObAw&oe=69D2E20C'},
-    {rank:3, platform:'Instagram', type:'CAROUSEL', caption:"Balmy Nights. MonâFri, 4â6pm.\n$39 taco platter for two. Frozen daiquiris $15.\nThe kind of early evening that turns into a long night at BAHA.\nBook ahead or walk in.", views:'491', likes:5, comments:0, engagement:3.6, imageUrl: 'https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/657804595_975967658435626_6316232805195570849_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=M5_0HMTvK7kQ7kNvwEqMQhz&_nc_oc=AdqavQ0OoKDAj50DTtLtDuHOs1vuWlTxNJKrPmhiHYf5meEzHetdiIoQZ5fuDWLgY5c&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af1kvvO9aT1cd5NKEQ0jIMxGW6MrQgQMP_LSU_lqAli9_A&oe=69D2D0BE'},
+    {rank:2, platform:'Instagram', type:'CAROUSEL', caption:"Balmy Nights, the BAHA way.\nPick your fillings, pass them around the table and add a frozen daiquiri while youÃ¢ÂÂre at it.\nWalk in or reserve.", views:'526', likes:6, comments:0, engagement:4.7, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/656735529_18125147980601318_6191985054698312114_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=F1P_jtyKWn0Q7kNvwGDBbXG&_nc_oc=AdrQQsRrBV7gS361rDc8EYWRZqtvGUFAIhaftOzJeE9VPCm2xINOSPYpQqgZtI5jrIU&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af2Mlk5TR-fNtiAGrcQQj-av-vwHkyWxdeThfTLeJLObAw&oe=69D2E20C'},
+    {rank:3, platform:'Instagram', type:'CAROUSEL', caption:"Balmy Nights. MonÃ¢ÂÂFri, 4Ã¢ÂÂ6pm.\n$39 taco platter for two. Frozen daiquiris $15.\nThe kind of early evening that turns into a long night at BAHA.\nBook ahead or walk in.", views:'491', likes:5, comments:0, engagement:3.6, imageUrl: 'https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/657804595_975967658435626_6316232805195570849_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=M5_0HMTvK7kQ7kNvwEqMQhz&_nc_oc=AdqavQ0OoKDAj50DTtLtDuHOs1vuWlTxNJKrPmhiHYf5meEzHetdiIoQZ5fuDWLgY5c&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af1kvvO9aT1cd5NKEQ0jIMxGW6MrQgQMP_LSU_lqAli9_A&oe=69D2D0BE'},
     {rank:4, platform:'Instagram', type:'CAROUSEL', caption:"Miso Eggplant skewers.\nSmoked cashew and cannellini crema, herb salad.\nOrder one, share another.", views:'441', likes:6, comments:0, engagement:3.4, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/656273522_18125166844601318_2319770135423896258_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=NaqAnj8swG8Q7kNvwFNj_ai&_nc_oc=Adrv0kuPh4CsviXFyvcbzHy5_nudOehHMk1NI2BLpQ91tY3juxFPvPp-V64YzWdWSj4&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af0FD_Rxnoc4fXJGWkT61a28-ajAdRrVDyHof8vGAm0dlQ&oe=69D2C36C'},
     {rank:5, platform:'Instagram', type:'IMAGE', caption:"The table fills quickly at BAHA.\nA few plates to share, and then a few more.", views:'434', likes:6, comments:0, engagement:3, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/656267228_18124453693601318_2461646587856279058_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ladSQ5o-w6cQ7kNvwG-j7uD&_nc_oc=AdqsgtRGB57nmjfxW6DQO7vS_wNi5dK2a2jcPeiLsa4CRQZFfayBodzWoCCF-snYCFw&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af23mCec3vwmMWn4NAlRV1y32SZi5PclrSrVcE8R3JldGw&oe=69D2E2A5'},
     {rank:6, platform:'Instagram', type:'IMAGE', caption:"It often starts like this. A few BAHA snacks in the middle.\nChicken wings, fried squid, and beef empanada. Pass them around.", views:'389', likes:5, comments:0, engagement:2.2, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/657246860_18125665264601318_2122287758046882185_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=s1BVMHwCOMoQ7kNvwHo6FiI&_nc_oc=Adp931epcYtNzE4_ubzXc-zALw6REsqYxYsVNX19sA0LG-9j1ZNl01cb5cbq6vFbTKo&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af3_HRHHnwv5gDhuEMxJiOOA8IBNUCUJBsGZtZrIpUyogQ&oe=69D2EF46'},
     {rank:7, platform:'Instagram', type:'IMAGE', caption:"The week feels shorter when you spend Happy Hour at BAHA.", views:'371', likes:7, comments:0, engagement:3.6, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/654966119_18124806484601318_5359835069336033839_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=HUPNbmO7HbgQ7kNvwHR3TQy&_nc_oc=AdqIxoe2yb4mJvr9gtXqDU_xvgvUBwWO-nwf0rp6MFOPzM-YatKuuEW7FFkoF7NsuGI&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af1n0cgkA_uo94HRk4FkxgjOtbUo0hHc2IUKGLkGd5KzZA&oe=69D2ED12'},
-    {rank:8, platform:'Instagram', type:'CAROUSEL', caption:"A taco worth reaching for ð", views:'355', likes:7, comments:0, engagement:4.5, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/658398338_18125366710601318_4580938752444966838_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=glc19sRUP-AQ7kNvwH8kGBv&_nc_oc=Adoqb8zhTz60jLV-kEUMTVZtO4Sw7JyDImxX08qBAMiyJ09mUfoPbqt4cQPF0MIm7ZY&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af3uF7dtvikU47kyPJz0VCGahXLIbfQWsf1IjMDrtKcjYA&oe=69D2F739'}
+    {rank:8, platform:'Instagram', type:'CAROUSEL', caption:"A taco worth reaching for Ã°ÂÂÂ", views:'355', likes:7, comments:0, engagement:4.5, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/658398338_18125366710601318_4580938752444966838_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=glc19sRUP-AQ7kNvwH8kGBv&_nc_oc=Adoqb8zhTz60jLV-kEUMTVZtO4Sw7JyDImxX08qBAMiyJ09mUfoPbqt4cQPF0MIm7ZY&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=twCC-yySEPk6ruhTLpj82w&oh=00_Af3uF7dtvikU47kyPJz0VCGahXLIbfQWsf1IjMDrtKcjYA&oe=69D2F739'}
   ]
 
   function fmt(n, metric) {
@@ -847,7 +847,7 @@
         : `<div class="post-thumb-fallback" style="background:${p.gradient};"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="rgba(255,255,255,0.55)"/></svg></div>`;
 
       const viewLinkHTML = p.postUrl
-        ? `<a class="post-view-link" href="${p.postUrl}" target="_blank" rel="noopener">View on Instagram â</a>`
+        ? `<a class="post-view-link" href="${p.postUrl}" target="_blank" rel="noopener">View on Instagram Ã¢ÂÂ</a>`
         : '';
 
       const card = document.createElement('div');
@@ -863,7 +863,7 @@
         <div class="post-body">
           <div class="post-rank-row">
             <span class="rank-badge${rank === 1 ? ' r1' : ''}">${rank}</span>
-            <span class="rank-platform">Instagram &nbsp;Â·&nbsp; ${p.type}</span>
+            <span class="rank-platform">Instagram &nbsp;ÃÂ·&nbsp; ${p.type}</span>
           </div>
           <div class="post-caption">${p.caption}</div>
           <div class="post-metrics">${metricsHTML}</div>
@@ -881,12 +881,12 @@
   function sortPosts(metric) { renderPosts(metric); }
   renderPosts('views');
 
-  /* âââ Chart palette âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Chart palette Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   const C = { blue: '#065F1F', light: '#0A8A2E', sky: '#C8E8D0', green: '#3D8C5E' };
   Chart.defaults.font.family = 'Georgia, serif';
   Chart.defaults.color = '#6B6B6B';
 
-  /* âââ Email open rate chart âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Email open rate chart Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   new Chart(document.getElementById('emailChart'), {
     type: 'bar',
     data: {
@@ -921,7 +921,7 @@
     return h > 0 ? `${h}h ${m > 0 ? m + 'm' : ''}` : `${m}m`;
   };
 
-  /* âââ Design hours chart (March) âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Design hours chart (March) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   new Chart(document.getElementById('hoursChart'), {
     type: 'bar',
     data: {
@@ -946,7 +946,7 @@
     }
   });
 
-  /* âââ Annual retainer chart (all projects + remaining) âââ */
+  /* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Annual retainer chart (all projects + remaining) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   new Chart(document.getElementById('retainerChart'), {
     type: 'doughnut',
     data: {
