@@ -30,7 +30,7 @@
       min-height: 100vh;
     }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ NAV ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── NAV ── */
     nav {
       background: var(--blue);
       padding: 0 40px;
@@ -62,7 +62,7 @@
     .tab.active { color: var(--white); background: var(--blue-dark); }
     .period { color: rgba(255,255,255,0.45); font-size: 12px; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ HERO ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── HERO ── */
     .hero {
       background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 65%, var(--blue-light) 100%);
       color: var(--white);
@@ -73,12 +73,12 @@
     .hero h1 em { color: rgba(255,255,255,0.65); font-style: normal; }
     .hero p { color: rgba(255,255,255,0.5); font-size: 13px; letter-spacing: 0.5px; margin-bottom: 0; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ LAYOUT ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── LAYOUT ── */
     main { max-width: 1100px; margin: 0 auto; padding: 32px 40px 60px; }
     .section { display: none; }
     .section.active { display: block; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ SECTION HEADER ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── SECTION HEADER ── */
     .sh {
       margin-bottom: 24px;
       padding-bottom: 14px;
@@ -98,12 +98,12 @@
       letter-spacing: 0.4px;
     }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ GRIDS ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── GRIDS ── */
     .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
     .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
     .g4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 20px; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ BASE CARD ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── BASE CARD ── */
     .card {
       background: var(--white);
       border-radius: 10px;
@@ -116,12 +116,12 @@
     .card-sub { font-size: 12px; color: var(--mid); }
     .card-grow { font-size: 13px; color: var(--green); margin-top: 4px; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ PLATFORM PILL ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── PLATFORM PILL ── */
     .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
     .pill-ig { background: rgba(225,48,108,0.1); color: var(--instagram); }
     .pill-fb { background: rgba(24,119,242,0.1); color: var(--facebook); }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ CHART CARD ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── CHART CARD ── */
     .chart-card {
       background: var(--white);
       border-radius: 10px;
@@ -133,7 +133,7 @@
     .chart-card h3 { font-size: 13px; font-weight: normal; color: var(--mid); letter-spacing: 0.5px; margin-bottom: 16px; }
     .chart-wrap { position: relative; height: 220px; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ REVENUE SECTION ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── REVENUE SECTION ── */
     .revenue-card {
       background: var(--white);
       border-radius: 10px;
@@ -186,7 +186,7 @@
     .ig-bar-pct { font-size: 12px; color: var(--mid); width: 44px; text-align: right; }
     .rev-note { font-size: 12.5px; color: var(--dark); line-height: 1.6; background: rgba(83,108,182,0.07); border-left: 3px solid var(--blue); border-radius: 0 8px 8px 0; padding: 13px 16px; margin-top: 16px; font-style: normal; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ POSTS CONTROLS ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── POSTS CONTROLS ── */
     .posts-head {
       display: flex;
       align-items: center;
@@ -218,7 +218,7 @@
     }
     .metric-select:focus { border-color: var(--blue); }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ POST CARDS ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── POST CARDS ── */
     .posts-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-bottom: 8px; }
     .post-card {
       background: var(--white);
@@ -283,7 +283,7 @@
     .post-view-link:hover { text-decoration: underline; }
     .post-view-pending { font-size: 11px; color: var(--light); letter-spacing: 0.3px; font-style: italic; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ EMAIL ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── EMAIL ── */
     .email-ov { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 20px; }
     .camp-list { margin-bottom: 20px; }
     .camp-item {
@@ -308,7 +308,7 @@
     .s-sched { background: rgba(83,108,182,0.13); color: var(--blue); }
     .s-draft { background: var(--sky); color: var(--mid); }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ DESIGN ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── DESIGN ── */
     .deliv {
       background: var(--white);
       border-radius: 10px;
@@ -327,7 +327,7 @@
     .hrs-bar { flex: 1; height: 4px; background: var(--sky); border-radius: 2px; overflow: hidden; }
     .hrs-fill { height: 100%; background: var(--blue); border-radius: 2px; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ POST THUMB ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── POST THUMB ── */
     .post-thumb {
       aspect-ratio: 4/5;
       overflow: hidden;
@@ -349,11 +349,11 @@
       justify-content: center;
     }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ RETAINER BAR ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── RETAINER BAR ── */
     .ret-bar-track { height: 18px; background: var(--sky); border-radius: 9px; overflow: hidden; margin: 12px 0 6px; }
     .ret-bar-fill { height: 100%; border-radius: 9px; background: linear-gradient(90deg, var(--blue-dark), var(--blue)); transition: width 1s ease; }
 
-    /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ NOTE ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+    /* ── NOTE ── */
     .note { font-size: 12px; color: var(--mid); background: var(--sky); padding: 10px 16px; border-radius: 8px; margin-bottom: 20px; line-height: 1.55; }
     .note strong { color: var(--charcoal); }
 
@@ -435,27 +435,27 @@
     <button class="tab" onclick="showSection('email', this)">Email</button>
     <button class="tab" onclick="showSection('design', this)">Design</button>
   </div>
-  <div class="period">Mar 1 ÃÂ¢ÃÂÃÂ Mar 31, 2026</div>
+  <div class="period">Mar 1 – Mar 31, 2026</div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-inner">
     <h1>Hyde <em>Marketing Report</em></h1>
-    <p>March 2026 &nbsp;&middot;&nbsp; Mar 1 ÃÂ¢ÃÂÃÂ Mar 31 &nbsp;&middot;&nbsp; Sydney</p>
+    <p>March 2026 &nbsp;&middot;&nbsp; Mar 1 – Mar 31 &nbsp;&middot;&nbsp; Sydney</p>
   </div>
 </div>
 
 <main>
 
-<!-- ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
+<!-- ═══════════════════════════════════════
      SOCIAL MEDIA
-ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ -->
+════════════════════════════════════════ -->
 <section id="social" class="section active">
 
   <div class="sh">
     <h2>Social Media <span>Performance</span></h2>
-    <span class="badge">Mar 1 ÃÂ¢ÃÂÃÂ Mar 30, 2026 &middot; Rella</span>
+    <span class="badge">Mar 1 – Mar 30, 2026 &middot; Rella</span>
   </div>
 
   <!-- Overview KPIs -->
@@ -480,18 +480,13 @@
       <div class="card-value">10.79%</div>
       <div class="card-sub">Cross-platform average</div>
     </div>
-    <div class="card">
-      <div class="card-title">Follower Growth</div>
-      <div class="card-value">-6</div>
-      <div class="card-grow"></div>
-      <div class="card-sub" style="margin-top:3px;">14,514 total followers</div>
-    </div>
+    
   </div>
 
   <!-- Platform breakdown -->
   <div class="g2">
     <div class="card">
-      <div class="pill pill-ig">ÃÂ¢ÃÂÃÂ Instagram</div>
+      <div class="pill pill-ig">● Instagram</div>
       <div class="plat-grid">
         <div><div style="font-size:21px;">216</div><div class="card-sub">Interactions</div></div>
         <div><div style="font-size:21px;">11.5%</div><div class="card-sub">Engagement</div></div>
@@ -501,7 +496,7 @@
       <div style="margin-top:12px;font-size:11px;color:var(--light);">10,587 total followers &middot; primary channel</div>
     </div>
     <div class="card">
-      <div class="pill pill-fb">ÃÂ¢ÃÂÃÂ Facebook</div>
+      <div class="pill pill-fb">● Facebook</div>
       <div class="plat-grid">
         <div><div style="font-size:21px;">0</div><div class="card-sub">Interactions</div></div>
         <div><div style="font-size:21px;">0.0%</div><div class="card-sub">Engagement</div></div>
@@ -530,7 +525,7 @@
   <!-- Attributed Revenue -->
   <div class="sh" style="margin-top:28px;">
     <h2>Attributed <span>Revenue</span></h2>
-    <span class="badge">Sevenrooms &middot; Mar 1 ÃÂ¢ÃÂÃÂ Mar 31, 2026</span>
+    <span class="badge">Sevenrooms &middot; Mar 1 – Mar 31, 2026</span>
   </div>
 
   <!-- Instagram Revenue -->
@@ -544,7 +539,7 @@
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill pill-ig" style="margin:0;">ÃÂ¢ÃÂÃÂ Instagram</div>
+          <div class="pill pill-ig" style="margin:0;">● Instagram</div>
           <span style="font-size:12px;color:var(--mid);">attributed via Instagram tracking link</span>
         </div>
         <div class="ig-stats-row">
@@ -588,7 +583,7 @@
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill pill-fb" style="margin:0;">ÃÂ¢ÃÂÃÂ Facebook</div>
+          <div class="pill pill-fb" style="margin:0;">● Facebook</div>
           <span style="font-size:12px;color:var(--mid);">attributed via Facebook tracking link</span>
         </div>
         <div class="ig-stats-row">
@@ -623,9 +618,9 @@
 
 </section>
 
-<!-- ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
+<!-- ═══════════════════════════════════════
      EMAIL
-ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ -->
+════════════════════════════════════════ -->
 <section id="email" class="section">
 
   <div class="sh">
@@ -642,7 +637,7 @@
     <div class="card">
       <div class="card-title">Avg Open Rate</div>
       <div class="card-value">29%</div>
-      <div class="card-sub">Industry avg ~20ÃÂ¢ÃÂÃÂ25%</div>
+      <div class="card-sub">Industry avg ~20–25%</div>
     </div>
     <div class="card">
       <div class="card-title">Avg Click Rate</div>
@@ -667,7 +662,7 @@
       </div>
       <div class="rev-ig">
         <div style="display:flex;align-items:center;gap:8px;">
-          <div class="pill" style="margin:0;background:rgba(83,108,182,0.12);color:var(--blue);">ÃÂ¢ÃÂÃÂ Email</div>
+          <div class="pill" style="margin:0;background:rgba(83,108,182,0.12);color:var(--blue);">✉ Email</div>
           <span style="font-size:12px;color:var(--mid);">attributed via EDM tracking links</span>
         </div>
         <div class="ig-stats-row">
@@ -705,7 +700,7 @@
     <span class="badge">1 sent &middot; 1 scheduled &middot; 2 drafts</span>
   </div>
 
-  <div class="camp-list"><div class="camp-item"><div><div><div class="camp-name">March WhatÃÂ¢ÃÂÃÂs On EDM</div><span class="sbadge s-sent">Sent</span></div><div class="camp-meta">Sent Thu 26 Mar 2026 &middot; to Marketing Opt-Ins</div></div><div class="camp-stats"><div class="cs"><div class="v">6,174</div><div class="l">Recipients</div></div><div class="cs"><div class="v">29%</div><div class="l">Open Rate</div></div><div class="cs"><div class="v">4%</div><div class="l">Click Rate</div></div><div class="cs"><div class="v">217</div><div class="l">Clicks</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">Bottomless Lunch Solus EDM</div><span class="sbadge s-sched">Scheduled</span></div><div class="camp-meta">Scheduled Tue 31 Mar 2026 11:30 &middot; 6,202 guests on list</div></div><div class="camp-stats"><div class="cs"><div class="v">6,202</div><div class="l">Recipients</div></div><div class="cs"><div class="v">—</div><div class="l">Open Rate</div></div><div class="cs"><div class="v">—</div><div class="l">Click Rate</div></div><div class="cs"><div class="v">—</div><div class="l">Clicks</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">[TEMPLATE] Solus EDM</div><span class="sbadge s-draft">Draft</span></div><div class="camp-meta">Draft</div></div><div class="camp-stats"><div class="cs"><div class="v">—</div><div class="l">Recipients</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">[TEMPLATE] WhatÃÂ¢ÃÂÃÂs On EDM</div><span class="sbadge s-draft">Draft</span></div><div class="camp-meta">Draft</div></div><div class="camp-stats"><div class="cs"><div class="v">—</div><div class="l">Recipients</div></div></div></div></div>
+  <div class="camp-list"><div class="camp-item"><div><div><div class="camp-name">March What’s On EDM</div><span class="sbadge s-sent">Sent</span></div><div class="camp-meta">Sent Thu 26 Mar 2026 &middot; to Marketing Opt-Ins</div></div><div class="camp-stats"><div class="cs"><div class="v">6,174</div><div class="l">Recipients</div></div><div class="cs"><div class="v">29%</div><div class="l">Open Rate</div></div><div class="cs"><div class="v">4%</div><div class="l">Click Rate</div></div><div class="cs"><div class="v">217</div><div class="l">Clicks</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">Bottomless Lunch Solus EDM</div><span class="sbadge s-sched">Scheduled</span></div><div class="camp-meta">Scheduled Tue 31 Mar 2026 11:30 &middot; 6,202 guests on list</div></div><div class="camp-stats"><div class="cs"><div class="v">6,202</div><div class="l">Recipients</div></div><div class="cs"><div class="v">—</div><div class="l">Open Rate</div></div><div class="cs"><div class="v">—</div><div class="l">Click Rate</div></div><div class="cs"><div class="v">—</div><div class="l">Clicks</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">[TEMPLATE] Solus EDM</div><span class="sbadge s-draft">Draft</span></div><div class="camp-meta">Draft</div></div><div class="camp-stats"><div class="cs"><div class="v">—</div><div class="l">Recipients</div></div></div></div><div class="camp-item"><div><div><div class="camp-name">[TEMPLATE] What’s On EDM</div><span class="sbadge s-draft">Draft</span></div><div class="camp-meta">Draft</div></div><div class="camp-stats"><div class="cs"><div class="v">—</div><div class="l">Recipients</div></div></div></div></div>
 
   <div class="chart-card">
     <h3>Campaign Open Rate Comparison</h3>
@@ -715,9 +710,9 @@
 
 </section>
 
-<!-- ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
+<!-- ═══════════════════════════════════════
      DESIGN
-ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ -->
+════════════════════════════════════════ -->
 <section id="design" class="section">
 
   
@@ -743,7 +738,7 @@
   <!-- Deliverable -->
   
 
-  <div class="deliv"><div class="deliv-head"><div><div class="deliv-name">ValentineÃÂ¢ÃÂÃÂs Day Assets</div><div class="deliv-sec">Design Requests</div></div><div><div class="deliv-date">Completed 9 Mar 2026</div><div></div></div></div><div class="deliv-tags"><span class="dtag">Seasonal Campaign</span><span class="dtag">ValentineÃÂ¢ÃÂÃÂs Day</span><span class="dtag">Digital Asset</span></div><div></div><div class="deliv-hrs"><span>—</span><div class="hrs-bar"><div class="hrs-fill" style="width:0%;"></div></div><span>—</span></div></div><div class="chart-card" style="margin-top:8px;">
+  <div class="deliv"><div class="deliv-head"><div><div class="deliv-name">Valentine’s Day Assets</div><div class="deliv-sec">Design Requests</div></div><div><div class="deliv-date">Completed 9 Mar 2026</div><div></div></div></div><div></div><div class="deliv-hrs"><span>—</span><div class="hrs-bar"><div class="hrs-fill" style="width:0%;"></div></div><span>—</span></div></div><div class="chart-card" style="margin-top:8px;">
     <h3>Design Hours by Deliverable &nbsp;&middot;&nbsp; March 2026</h3>
     <div class="chart-wrap"><canvas id="hoursChart"></canvas></div>
   </div>
@@ -790,7 +785,7 @@
 </main>
 
 <script>
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Navigation ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Navigation ─── */
   function showSection(id, btn) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -798,16 +793,16 @@
     btn.classList.add('active');
   }
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Posts data (Q1 2026, Rella) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Posts data (Q1 2026, Rella) ─── */
   /* imageUrl: paste the direct Instagram post image URL from Rella to enable thumbnails */
   /* postUrl:  paste the Instagram permalink (e.g. https://www.instagram.com/p/XXXXX/) to make card clickable */
   const postsData = [
     {rank:1, platform:'Instagram', type:'IMAGE', caption:"Cocktails, views, and good company — come up to Hyde for a little air this week.", views:'946', likes:18, comments:0, engagement:3.4, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/652670372_18197701012353769_2853626886150261995_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=dxPxwwXtilYQ7kNvwHplbts&_nc_oc=AdrTsTRB_5mxAgR2IY62f7si12ScqumELzkBKKUlA9iwMMba3kQErLaUPzN2-SVpQAw&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af3Hwb0CB0XtScxgvUyNA1i2Cmw14ERZPvofvteJzOWF9Q&oe=69D2C21A'},
-    {rank:2, platform:'Instagram', type:'CAROUSEL', caption:"Trying to keep it all togetherÃÂ¢ÃÂÃÂ¦ the Hyde way ÃÂ°ÃÂÃÂÃÂ", views:'659', likes:12, comments:0, engagement:3.5, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/654910331_18198013741353769_7959305580760709138_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=WfBwciqbH2cQ7kNvwG4J94K&_nc_oc=AdogT3PdiRRl7oiE2k_l2Xoh2FhXt7ZqmekZCucWqZzZwb293BpyoigtOWfJfHBvbzM&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af3cS45rTpzzYWHTvFcvDvzukmo2xunUKylwUvSyXKQHAw&oe=69D2D5D6'},
-    {rank:3, platform:'Instagram', type:'IMAGE', caption:"Proof of postcode might come in handy tonight ÃÂ°ÃÂÃÂÃÂ\nLocals night, every Wednesday. Don't forget to bring your ID and good company.", views:'583', likes:11, comments:0, engagement:6.7, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/658659620_18198964234353769_3391058731873807810_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=uT0Pf5aupkUQ7kNvwElykvc&_nc_oc=AdoBLoHTsX4kLYxesO3WvCPLbueonR9YnhQbBrqUOGis34Ensz5dJgRo_6hhV1RHK-A&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af3DE1uKndPTb5MN8oQICLs7rlwj500JANaHFRFmafybcQ&oe=69D2DE48'},
+    {rank:2, platform:'Instagram', type:'CAROUSEL', caption:"Trying to keep it all together… the Hyde way 👀", views:'659', likes:12, comments:0, engagement:3.5, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/654910331_18198013741353769_7959305580760709138_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=WfBwciqbH2cQ7kNvwG4J94K&_nc_oc=AdogT3PdiRRl7oiE2k_l2Xoh2FhXt7ZqmekZCucWqZzZwb293BpyoigtOWfJfHBvbzM&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af3cS45rTpzzYWHTvFcvDvzukmo2xunUKylwUvSyXKQHAw&oe=69D2D5D6'},
+    {rank:3, platform:'Instagram', type:'IMAGE', caption:"Proof of postcode might come in handy tonight 👀\nLocals night, every Wednesday. Don't forget to bring your ID and good company.", views:'583', likes:11, comments:0, engagement:6.7, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/658659620_18198964234353769_3391058731873807810_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=uT0Pf5aupkUQ7kNvwElykvc&_nc_oc=AdoBLoHTsX4kLYxesO3WvCPLbueonR9YnhQbBrqUOGis34Ensz5dJgRo_6hhV1RHK-A&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af3DE1uKndPTb5MN8oQICLs7rlwj500JANaHFRFmafybcQ&oe=69D2DE48'},
     {rank:4, platform:'Instagram', type:'IMAGE', caption:"Mediterranean vibes on the side — creamy burrata, golden fries, and the perfect start to the table.", views:'533', likes:7, comments:0, engagement:2.5, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/656623800_18199188091353769_2292081632019779489_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3sUD6sSWZ80Q7kNvwHc0-dM&_nc_oc=Adpdxu2QREt7lnKJWa7-uRC8KVJ6krY_hf3HA2sKAY1ZoTNv2h0d8NrFe7Ry6gtA2G0&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af1i41RE0G6U9OaKXHFR5vpjmLgxWyuCMBJW4x-B5E2IkQ&oe=69D2C2BA'},
-    {rank:5, platform:'Instagram', type:'CAROUSEL', caption:"Long lunch, good company, the Hyde way. Five courses to share, two hours to linger, and music that keeps the afternoon flowing. 12pm ÃÂ¢ÃÂÃÂ 2pm, Friday ÃÂ¢ÃÂÃÂ Sunday.", views:'522', likes:7, comments:0, engagement:3.4, imageUrl: 'https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/657229720_18198984649353769_2579434969380144309_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=2SqTOZwAQJsQ7kNvwFxEyOg&_nc_oc=AdovWOELXWoDBO_Gt-2wYd0QpsrNpw8ocBd6vum52kvnRpW-UWg3mqVLuEkfO_IBczU&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af0VleXST7Zjq8SUZJVIKNV-LHf32xrBpJp6fDXSNSFLsA&oe=69D2C5C7'},
-    {rank:6, platform:'Instagram', type:'IMAGE', caption:"Our Pork Cutlet Cotoletta ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ tender, golden, and ready to enjoy with friends by the sea.", views:'518', likes:9, comments:0, engagement:3.2, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/654166237_18197852761353769_5662793176053258876_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=WFCS5EQxlnQQ7kNvwGPX6qy&_nc_oc=Adox_3CgfCZv08Xe8IrCgJgKW-1uCiWDONk1fU3N08qP5qusRCVqfjKCjSq1O7JJzBM&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af3mg5RYmbfMmU_Kq3Y8F2_iLX-SH7HV-CjjcYTiVkwLLA&oe=69D2C080'},
+    {rank:5, platform:'Instagram', type:'CAROUSEL', caption:"Long lunch, good company, the Hyde way. Five courses to share, two hours to linger, and music that keeps the afternoon flowing. 12pm – 2pm, Friday – Sunday.", views:'522', likes:7, comments:0, engagement:3.4, imageUrl: 'https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/657229720_18198984649353769_2579434969380144309_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=2SqTOZwAQJsQ7kNvwFxEyOg&_nc_oc=AdovWOELXWoDBO_Gt-2wYd0QpsrNpw8ocBd6vum52kvnRpW-UWg3mqVLuEkfO_IBczU&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af0VleXST7Zjq8SUZJVIKNV-LHf32xrBpJp6fDXSNSFLsA&oe=69D2C5C7'},
+    {rank:6, platform:'Instagram', type:'IMAGE', caption:"Our Pork Cutlet Cotoletta –– tender, golden, and ready to enjoy with friends by the sea.", views:'518', likes:9, comments:0, engagement:3.2, imageUrl: 'https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/654166237_18197852761353769_5662793176053258876_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=WFCS5EQxlnQQ7kNvwGPX6qy&_nc_oc=Adox_3CgfCZv08Xe8IrCgJgKW-1uCiWDONk1fU3N08qP5qusRCVqfjKCjSq1O7JJzBM&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af3mg5RYmbfMmU_Kq3Y8F2_iLX-SH7HV-CjjcYTiVkwLLA&oe=69D2C080'},
     {rank:7, platform:'Instagram', type:'IMAGE', caption:"Three burgers to choose from, fries on the side, $20. Ocean views included! \nThursday plans = sorted. Join us every Thursday from 4pm.", views:'508', likes:6, comments:0, engagement:1.9, imageUrl: 'https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/654538089_18197556013353769_6578394748927014674_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=sCbGHz3FJKUQ7kNvwFM_U-q&_nc_oc=Adp0tzbL6WR70LWqVyfM-j7YcIoJLry5dDKFdTW741QmzTccuKnHAVD2aoqUn-hH47U&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af0nTZNv8-lID03fZQq2tnU1PtcuKyytg0zbePL1u08R-A&oe=69D2BF37'},
     {rank:8, platform:'Instagram', type:'IMAGE', caption:"It shouldn't be so hard to find a little air in Surfers Paradise, but up here there's plenty of room to breathe. Welcome to Hyde Paradiso.", views:'481', likes:6, comments:0, engagement:2.6, imageUrl: 'https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/655312187_18198186055353769_3800377235211871764_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9N54V8jee3oQ7kNvwG9texr&_nc_oc=AdqzhygzkCqgo-5cN51C6dZGFGAxle633l0i37aI_y6fboOMjImp6p5rQvDh640ppwo&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Z8hy--ncCOtt86HH9jzlXg&oh=00_Af0KnwLLt5jOYQX9nh9IZlcl7QsaXnFmZREuOKIgtYgrPA&oe=69D2D720'}
   ]
@@ -847,7 +842,7 @@
         : `<div class="post-thumb-fallback" style="background:${p.gradient};"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="rgba(255,255,255,0.55)"/></svg></div>`;
 
       const viewLinkHTML = p.postUrl
-        ? `<a class="post-view-link" href="${p.postUrl}" target="_blank" rel="noopener">View on Instagram ÃÂ¢ÃÂÃÂ</a>`
+        ? `<a class="post-view-link" href="${p.postUrl}" target="_blank" rel="noopener">View on Instagram ↗</a>`
         : '';
 
       const card = document.createElement('div');
@@ -881,12 +876,12 @@
   function sortPosts(metric) { renderPosts(metric); }
   renderPosts('views');
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Chart palette ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Chart palette ─── */
   const C = { blue: '#C8806A', light: '#E0A090', sky: '#F5E0D8', green: '#3D8C5E' };
   Chart.defaults.font.family = 'Georgia, serif';
   Chart.defaults.color = '#6B6B6B';
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Email open rate chart ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Email open rate chart ─── */
   new Chart(document.getElementById('emailChart'), {
     type: 'bar',
     data: {
@@ -921,7 +916,7 @@
     return h > 0 ? `${h}h ${m > 0 ? m + 'm' : ''}` : `${m}m`;
   };
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Design hours chart (March) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Design hours chart (March) ─── */
   new Chart(document.getElementById('hoursChart'), {
     type: 'bar',
     data: {
@@ -946,7 +941,7 @@
     }
   });
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Annual retainer chart (all projects + remaining) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ─── Annual retainer chart (all projects + remaining) ─── */
   new Chart(document.getElementById('retainerChart'), {
     type: 'doughnut',
     data: {
