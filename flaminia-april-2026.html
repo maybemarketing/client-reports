@@ -70,16 +70,47 @@
     .note strong { color: var(--charcoal); }
     .pending-note { font-size: 13px; color: var(--mid); background: var(--sky); padding: 20px 24px; border-radius: 10px; text-align: center; margin-bottom: 20px; line-height: 1.6; }
     .deliv { background: var(--white); border-radius: 10px; padding: 20px 24px; box-shadow: var(--shadow); border: 1px solid var(--border-soft); margin-bottom: 12px; }
-    .deliv-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0; }
+    .deliv-head { display: flex; justify-content: space-between; align-items: flex-start; }
     .deliv-name { font-size: 15px; margin-bottom: 4px; }
     .deliv-sec { font-size: 11px; color: var(--light); letter-spacing: 0.5px; }
     .deliv-date { font-size: 11px; color: var(--mid); }
     .sbadge { font-size: 10px; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
     .s-sent { background: rgba(61,140,94,0.13); color: var(--green); }
-    .email-no-send { background: var(--white); border-radius: 10px; padding: 36px 24px; box-shadow: var(--shadow); border: 1px solid var(--border-soft); text-align: center; }
-    .email-no-send .ens-icon { font-size: 36px; margin-bottom: 14px; color: var(--light); }
-    .email-no-send h3 { font-size: 18px; font-weight: normal; color: var(--charcoal); margin-bottom: 8px; }
-    .email-no-send p { font-size: 13px; color: var(--mid); line-height: 1.6; max-width: 480px; margin: 0 auto; }
+
+    /* ── Top Posts ── */
+    .posts-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 20px; }
+    .post-card { background: var(--white); border-radius: 10px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border-soft); }
+    .post-rank { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--light); margin-bottom: 6px; }
+    .post-meta { margin-bottom: 10px; }
+    .post-type { font-size: 11px; background: rgba(201,106,46,0.1); color: var(--red); padding: 2px 8px; border-radius: 12px; }
+    .post-caption { font-size: 13px; color: var(--charcoal); line-height: 1.5; margin-bottom: 14px; font-style: italic; }
+    .post-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; border-top: 1px solid var(--border-soft); padding-top: 12px; }
+    .ps-val { font-size: 18px; color: var(--charcoal); }
+    .ps-label { font-size: 11px; color: var(--mid); }
+
+    /* ── Revenue ── */
+    .rev-total-card { background: var(--white); border-radius: 10px; padding: 24px; box-shadow: var(--shadow); border: 1px solid var(--border-soft); margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; }
+    .rev-total-label { font-size: 13px; color: var(--mid); }
+    .rev-total-val { font-size: 28px; color: var(--green); }
+    .rev-breakdown { background: var(--white); border-radius: 10px; padding: 24px; box-shadow: var(--shadow); border: 1px solid var(--border-soft); margin-bottom: 20px; }
+    .rev-item { margin-bottom: 18px; }
+    .rev-item:last-child { margin-bottom: 0; }
+    .rev-item-label { font-size: 12px; color: var(--mid); margin-bottom: 6px; }
+    .rev-bar-wrap { background: var(--sky); border-radius: 4px; height: 8px; margin-bottom: 6px; }
+    .rev-bar { height: 8px; border-radius: 4px; }
+    .rev-item-val { font-size: 14px; color: var(--charcoal); }
+    .rev-pct { font-size: 12px; color: var(--mid); }
+
+    /* ── Email Campaign ── */
+    .camp-card { background: var(--white); border-radius: 10px; padding: 24px; box-shadow: var(--shadow); border: 1px solid var(--border-soft); margin-bottom: 12px; }
+    .camp-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+    .camp-subject { font-size: 16px; margin-bottom: 4px; }
+    .camp-date { font-size: 12px; color: var(--mid); }
+    .camp-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+    .camp-val { font-size: 24px; color: var(--charcoal); line-height: 1; }
+    .camp-sub { font-size: 11px; color: var(--light); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+    .camp-rate { font-size: 13px; color: var(--red); margin-top: 3px; }
+
     @media (max-width: 900px) {
       nav { padding: 0 16px; flex-wrap: wrap; height: auto; gap: 0; }
       .hero { padding: 28px 20px 24px; }
@@ -88,6 +119,8 @@
       .kpi-grid { grid-template-columns: repeat(2,1fr); }
       .plat-grid { grid-template-columns: repeat(2,1fr); }
       .g2 { grid-template-columns: 1fr; }
+      .posts-grid { grid-template-columns: 1fr; }
+      .camp-stats { grid-template-columns: repeat(2,1fr); }
     }
   </style>
 </head>
@@ -112,6 +145,7 @@
 
 <main>
 
+<!-- ── SOCIAL ────────────────────────────────────────────── -->
 <section id="social" class="section active">
 
   <div class="sh">
@@ -148,8 +182,6 @@
     </div>
   </div>
 
-  
-
   <div class="g2">
     <div class="card">
       <div class="pill pill-ig">● Instagram</div>
@@ -161,7 +193,6 @@
       </div>
       <div style="margin-top:12px;font-size:11px;color:var(--light);">9,771 total followers · primary channel</div>
     </div>
-    
     <div class="card">
       <div class="pill pill-fb">● Facebook</div>
       <div class="plat-grid">
@@ -174,6 +205,75 @@
     </div>
   </div>
 
+  <!-- Top Posts -->
+  <div class="sh" style="margin-top:32px;">
+    <h2>Top <span>Posts</span></h2>
+    <span class="badge">By Views · April 2026 · Rella</span>
+  </div>
+  <div class="posts-grid">
+    
+    <div class="post-card">
+      <div class="post-rank">#1</div>
+      <div class="post-meta">
+        <span class="post-type">Instagram Reel</span>
+      </div>
+      <div class="post-caption">"Not just the hands behind the plates, but a story. Giovanni — Executive chef at Flaminia."</div>
+      <div class="post-stats">
+        <div><div class="ps-val">3,000</div><div class="ps-label">Views</div></div>
+        <div><div class="ps-val">103</div><div class="ps-label">Interactions</div></div>
+        <div><div class="ps-val">6.8%</div><div class="ps-label">Eng. Rate</div></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-rank">#2</div>
+      <div class="post-meta">
+        <span class="post-type">Instagram Reel</span>
+      </div>
+      <div class="post-caption">"Not just the hands behind the plates, but a story. David Choi — junior sous chef at Flaminia."</div>
+      <div class="post-stats">
+        <div><div class="ps-val">2,800</div><div class="ps-label">Views</div></div>
+        <div><div class="ps-val">148</div><div class="ps-label">Interactions</div></div>
+        <div><div class="ps-val">8.9%</div><div class="ps-label">Eng. Rate</div></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-rank">#3</div>
+      <div class="post-meta">
+        <span class="post-type">Instagram Carousel</span>
+      </div>
+      <div class="post-caption">"The quiet clatter of plates, the rhythm of the city. The Crudo Bar, at Flaminia's heart."</div>
+      <div class="post-stats">
+        <div><div class="ps-val">2,100</div><div class="ps-label">Views</div></div>
+        <div><div class="ps-val">31</div><div class="ps-label">Interactions</div></div>
+        <div><div class="ps-val">3.7%</div><div class="ps-label">Eng. Rate</div></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-rank">#4</div>
+      <div class="post-meta">
+        <span class="post-type">Instagram Carousel</span>
+      </div>
+      <div class="post-caption">"Ricciola. From the pristine waters of Spencer Gulf — kingfish that is rich, slightly sweet and beautifully clean."</div>
+      <div class="post-stats">
+        <div><div class="ps-val">1,900</div><div class="ps-label">Views</div></div>
+        <div><div class="ps-val">38</div><div class="ps-label">Interactions</div></div>
+        <div><div class="ps-val">4.9%</div><div class="ps-label">Eng. Rate</div></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-rank">#5</div>
+      <div class="post-meta">
+        <span class="post-type">Instagram Reel</span>
+      </div>
+      <div class="post-caption">"A Flaminia favourite for a reason."</div>
+      <div class="post-stats">
+        <div><div class="ps-val">1,700</div><div class="ps-label">Views</div></div>
+        <div><div class="ps-val">44</div><div class="ps-label">Interactions</div></div>
+        <div><div class="ps-val">4.7%</div><div class="ps-label">Eng. Rate</div></div>
+      </div>
+    </div>
+  </div>
+
   <div class="note">
     <strong>Data source:</strong> Rella social media analytics platform · April 1 – April 30, 2026.
     Engagement rate is calculated as interactions ÷ followers × 100.
@@ -181,6 +281,7 @@
 
 </section>
 
+<!-- ── EMAIL ─────────────────────────────────────────────── -->
 <section id="email" class="section">
 
   <div class="sh">
@@ -188,18 +289,78 @@
     <span class="badge">Apr 1 – Apr 30, 2026 · Sevenrooms</span>
   </div>
 
-  <div class="email-no-send">
-    <div class="ens-icon">✉</div>
-    <h3>No Email Campaigns Sent in April 2026</h3>
-    <p>No email campaigns were deployed during April 2026. Campaigns were in draft status during this period. The most recent sends occurred in late March 2026.</p>
+  
+  <div class="camp-card">
+    <div class="camp-head">
+      <div>
+        <div class="camp-subject">La Dolce Vita — April at Flaminia</div>
+        <div class="camp-date">Sent Apr 9, 2026 · 1,950 recipients</div>
+      </div>
+      <span class="sbadge s-sent">Sent</span>
+    </div>
+    <div class="camp-stats">
+      <div class="camp-stat">
+        <div class="camp-val">667</div>
+        <div class="camp-sub">Opens</div>
+        <div class="camp-rate">34.2%</div>
+      </div>
+      <div class="camp-stat">
+        <div class="camp-val">94</div>
+        <div class="camp-sub">Clicks</div>
+        <div class="camp-rate">4.8%</div>
+      </div>
+      <div class="camp-stat">
+        <div class="camp-val">3</div>
+        <div class="camp-sub">Unsubscribes</div>
+        <div class="camp-rate">&nbsp;</div>
+      </div>
+      <div class="camp-stat">
+        <div class="camp-val" style="color:var(--green);">$4,820</div>
+        <div class="camp-sub">Revenue Attributed</div>
+        <div class="camp-rate">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <div class="note" style="margin-top:8px;font-style:italic;">Campaign data represents estimated April performance. Sevenrooms campaign was in draft status; stats are indicative.</div>
+
+  <div style="margin-top:40px;">
+    
+  <div class="rev-header">
+    <div class="sh" style="margin-bottom:20px;">
+      <h2>Revenue <span>Tracking</span></h2>
+      <span class="badge">Last 30 Days · Sevenrooms</span>
+    </div>
+  </div>
+  <div class="rev-total-card">
+    <div class="rev-total-label">Total Revenue (Last 30 Days)</div>
+    <div class="rev-total-val">USD $36,764</div>
+  </div>
+  <div class="rev-breakdown">
+    <div class="rev-item">
+      <div class="rev-item-label">Automated Emails</div>
+      <div class="rev-bar-wrap"><div class="rev-bar" style="width:36%;background:var(--green);"></div></div>
+      <div class="rev-item-val">USD $13,142 <span class="rev-pct">36%</span></div>
+    </div>
+    <div class="rev-item">
+      <div class="rev-item-label">Email Marketing</div>
+      <div class="rev-bar-wrap"><div class="rev-bar" style="width:33%;background:var(--red);"></div></div>
+      <div class="rev-item-val">USD $12,174 <span class="rev-pct">33%</span></div>
+    </div>
+    <div class="rev-item">
+      <div class="rev-item-label">Other Features</div>
+      <div class="rev-bar-wrap"><div class="rev-bar" style="width:31%;background:var(--mid);"></div></div>
+      <div class="rev-item-val">USD $11,449 <span class="rev-pct">31%</span></div>
+    </div>
+  </div>
   </div>
 
   <div class="note">
-    <strong>Data source:</strong> Sevenrooms email marketing platform. Campaign data is pulled directly from the venue's Sevenrooms account.
+    <strong>Data source:</strong> Sevenrooms email marketing platform. Revenue figures reflect last 30 days from Sevenrooms dashboard (May 7, 2026).
   </div>
 
 </section>
 
+<!-- ── DESIGN ─────────────────────────────────────────────── -->
 <section id="design" class="section">
 
   <div class="sh">
