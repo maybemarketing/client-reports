@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maybe Marketing — Client Reports</title>
+  <style>
+    :root {
+      --red: #C96A2E; --red-dark: #9E5122; --red-light: #E08952;
+      --cream: #FDFCF5; --sky: #FDF6F0; --white: #FFFFFF;
+      --charcoal: #2C2C2C; --mid: #6B6B6B; --light: #9E9E9E;
+      --border: #F2DDD0; --border-soft: #FAE8D8;
+      --shadow: 0 2px 14px rgba(201,106,46,0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', serif; background: var(--cream); color: var(--charcoal); min-height: 100vh; }
+    header {
+      background: linear-gradient(135deg, var(--red-dark) 0%, var(--red) 65%, var(--red-light) 100%);
+      color: #fff; padding: 48px 40px 40px;
+    }
+    .header-inner { max-width: 1100px; margin: 0 auto; }
+    header h1 { font-size: 32px; font-weight: normal; letter-spacing: 1px; margin-bottom: 6px; }
+    header h1 em { color: rgba(255,255,255,0.55); font-style: normal; }
+    header p { color: rgba(255,255,255,0.5); font-size: 13px; letter-spacing: 0.5px; }
+    main { max-width: 1100px; margin: 0 auto; padding: 32px 40px 60px; }
+    .period-label { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--light); margin-bottom: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .report-card {
+      background: var(--white); border-radius: 10px; padding: 24px;
+      box-shadow: var(--shadow); border: 1px solid var(--border-soft);
+      text-decoration: none; color: var(--charcoal); transition: transform 0.15s, box-shadow 0.15s;
+      display: block;
+    }
+    .report-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(201,106,46,0.14); }
+    .rc-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--light); margin-bottom: 8px; }
+    .rc-name { font-size: 18px; margin-bottom: 4px; }
+    .rc-sub { font-size: 12px; color: var(--mid); }
+    .rc-arrow { font-size: 20px; color: var(--red); margin-top: 16px; }
+    @media (max-width: 900px) { main { padding: 20px 16px 40px; } .grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Maybe Marketing <em>Client Reports</em></h1>
+    <p>Monthly marketing performance reports · Powered by Rella, Sevenrooms & Asana</p>
+  </div>
+</header>
+<main>
+  <div class="period-label">April 2026 Reports</div>
+  <div class="grid">
+    <a class="report-card" href="flaminia-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">Flaminia</div>
+      <div class="rc-sub">Italian Dining · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="allora-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">Allora (Bar Allora)</div>
+      <div class="rc-sub">Italian Bar & Restaurant · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="el-vista-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">El Vista</div>
+      <div class="rc-sub">Rooftop Bar & Restaurant · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="tutto-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">Tutto Cucina</div>
+      <div class="rc-sub">Italian Dining · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="hyde-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">Hyde Paradiso</div>
+      <div class="rc-sub">Bar & Venue · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="baha-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">Baha</div>
+      <div class="rc-sub">Restaurant · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="park-and-cove-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">Park & Cove</div>
+      <div class="rc-sub">Waterfront Dining · Noosa</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="aluco-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">Aluco Restaurant and Bar</div>
+      <div class="rc-sub">Restaurant & Bar · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="ovello-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">Ovello Bar & Kitchen</div>
+      <div class="rc-sub">Bar & Restaurant · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="the-croft-house-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">The Croft House</div>
+      <div class="rc-sub">Restaurant · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="la-mesa-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">La Mesa</div>
+      <div class="rc-sub">Restaurant · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+    <a class="report-card" href="other-side-of-the-moon-april-2026.html">
+      <div class="rc-label">April 2026</div>
+      <div class="rc-name">Other Side of the Moon</div>
+      <div class="rc-sub">Venue · Sydney</div>
+      <div class="rc-arrow">→</div>
+    </a>
+  </div>
+</main>
+</body>
+</html>
